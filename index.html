@@ -76,6 +76,22 @@ hr{
 <h1>📊 PMO Dashboard – Euromundo</h1>
 <p class="subtitle">Repositorio automático de ejecuciones Katalon</p>
 
+<div style="margin:20px 0">
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="🔍 Buscar por Execution ID, fecha, suite o release"
+    style="
+      width:100%;
+      max-width:480px;
+      padding:12px 14px;
+      border-radius:10px;
+      border:1px solid #ccc;
+      font-size:14px;
+    "
+  >
+</div>
+
 <div id="latestExecution"></div>
 
 <hr>
@@ -96,15 +112,22 @@ fetch('executions/executions.json')
     const latest = data[data.length - 1];
     const history = data.slice().reverse();
 
+  // 🔹 Extraer ExecutionId desde el path
+  data.forEach(exec => {
+    exec.executionId = exec.path.split('/')[1];
+  });
+
     // ===== Última ejecución =====
     document.getElementById('latestExecution').innerHTML = `
       <div class="card latest">
-        <div class="exec-title">🟢 Última Ejecución</div>
+        <div class="exec-title">▶️ Última Ejecución</div>
         <div class="exec-meta">
+          <b>Execution ID:</b> ${latest.executionId}<br>
           <b>Fecha:</b> ${latest.date}<br>
           <b>Suite:</b> ${latest.suite}<br>
           <b>Release:</b> ${latest.release || 'N/A'}
         </div>
+
         <a class="btn final" href="${latest.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
           📘 Reporte FINAL
         </a>
