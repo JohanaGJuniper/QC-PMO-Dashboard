@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,16 +5,39 @@
 <title>PMO Dashboard – Euromundo</title>
 
 <style>
-body{font-family:'Segoe UI',Arial;background:#f4f6f9;padding:30px;color:#1a2b49}
-.card{background:#fff;border-radius:12px;padding:20px;margin-bottom:20px;
-box-shadow:0 4px 12px rgba(0,0,0,.08)}
-a.btn{display:inline-block;margin-right:10px;margin-top:10px;
-padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-.final{background:#2F3A56;color:white}
-.all{background:#E0E7FF;color:#1a2b49}
+body{
+  font-family:'Segoe UI',Arial;
+  background:#f4f6f9;
+  padding:30px;
+  color:#1a2b49
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08)
+}
+a.btn{
+  display:inline-block;
+  margin-right:10px;
+  margin-top:10px;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+.final{
+  background:#2F3A56;
+  color:white
+}
+.all{
+  background:#E0E7FF;
+  color:#1a2b49
+}
 </style>
-
 </head>
+
 <body>
 
 <div style="margin-bottom:20px">
@@ -27,29 +49,43 @@ padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
 <h1>📊 PMO Dashboard – Euromundo</h1>
 <p>Repositorio automático de ejecuciones Katalon</p>
 
+<div class="card">
+  <h3 id="execTitle">🟢 Última Ejecución</h3>
+  <p id="execDesc"></p>
 
-            <div class="card">
-              <h3>🟢 Última Ejecución – 20251226_234502</h3>
-              <p>Stabilization Testing – 2 ADL / 1 CNN</p>
+  <a id="btnFinal" class="btn final" target="_blank">
+    📘 Reporte FINAL
+  </a>
 
-              <a class="btn final"
-                 href="reports/20251226_234502/Stabilization Testing/stabilization_test_2ADL_1CNN/20251226_234502/Report_PMO/Report_PMO_Final.html"
-                 target="_blank">
-                 📘 Reporte FINAL
-              </a>
-
-              <a class="btn all"
-                 href="reports/20251226_234502/Stabilization Testing/stabilization_test_2ADL_1CNN/20251226_234502/Report_PMO/Report_PMO_All.html"
-                 target="_blank">
-                 📂 Reporte ALL
-              </a>
-            </div>
-            
-
+  <a id="btnAll" class="btn all" target="_blank">
+    📂 Reporte ALL
+  </a>
+</div>
 
 <p style="margin-top:40px;font-size:13px;color:#777">
 Dashboard generado automáticamente por Katalon
 </p>
+
+<script>
+fetch('executions/executions.json')
+  .then(response => response.json())
+  .then(data => {
+    if (!data || !data.length) return;
+
+    const last = data[data.length - 1];
+
+    document.getElementById('execTitle').textContent =
+      '🟢 Última Ejecución – ' + last.date;
+
+    document.getElementById('execDesc').textContent =
+      last.suite || '';
+
+    document.getElementById('btnAll').href = last.path;
+    document.getElementById('btnFinal').href =
+      last.path.replace('Report_PMO_All.html', 'Report_PMO_Final.html');
+  })
+  .catch(err => console.error('Error cargando executions.json', err));
+</script>
 
 </body>
 </html>
