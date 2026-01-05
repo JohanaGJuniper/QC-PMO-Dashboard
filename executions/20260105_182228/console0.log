@@ -1,0 +1,350 @@
+2026-01-05 18:22:32.172 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Stabilization Testing/stabilization_test_2ADL_1CNN
+2026-01-05 18:22:32.268 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Johana Natali Gomez Munar
+2026-01-05 18:22:32.269 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Euromundo
+2026-01-05 18:22:32.269 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = johana.gomez - CMANJGOMEZ2.JUNIPER
+2026-01-05 18:22:32.270 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-01-05 18:22:32.271 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.35
+2026-01-05 18:22:32.272 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2026-01-05 18:22:32.489 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📁 Carpeta de capturas creada: C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260105_182232
+2026-01-05 18:22:32.955 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-05 18:22:32.955 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Euromundo/Paquete_Basico/paquete_nal_para_1adl_1cnn_canal_mxn
+[Fatal Error] :1:30: El marcador en el documento que aparece tras el elemento raíz debe tener el formato correcto.
+2026-01-05 18:22:33.850 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ❌ Error al obtener versión DLL desde https://euromundomxn.juniper.es: El marcador en el documento que aparece tras el elemento raíz debe tener el formato correcto.
+2026-01-05 18:22:33.852 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-05 18:22:33.859 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🌐 TestCase: test cases/euromundo/paquete_basico/paquete_nal_para_1adl_1cnn_canal_mxn
+2026-01-05 18:22:33.865 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🔗 Dominio detectado: https://euromundomxn.juniper.es
+2026-01-05 18:22:33.872 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL: N/A
+2026-01-05 18:22:34.171 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: callTestCase(findTestCase("Euromundo/Login/Login_mxn"), [:], STOP_ON_FAILURE)
+2026-01-05 18:22:34.257 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-05 18:22:34.258 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Euromundo/Login/Login_mxn
+2026-01-05 18:22:34.359 DEBUG testcase.Login_mxn                       - 1: url = "https://euromundomxn.juniper.es"
+2026-01-05 18:22:34.364 DEBUG testcase.Login_mxn                       - 2: openBrowser("https://euromundomxn.juniper.es")
+2026-01-05 18:22:34.560 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-05 18:22:34.609 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+ene. 05, 2026 6:22:36 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 143
+ene. 05, 2026 6:22:36 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-05 18:22:36.586 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 791504c68a3e1f11a916b8fbcf17eac2
+2026-01-05 18:22:36.588 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-05 18:22:36.588 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-05 18:22:36.589 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2026-01-05 18:22:36.615 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-05 18:22:41.002 DEBUG testcase.Login_mxn                       - 3: maximizeWindow()
+2026-01-05 18:22:41.090 DEBUG testcase.Login_mxn                       - 4: version = utils.DLLUtils.getVersionDLL(url)
+[Fatal Error] :1:30: El marcador en el documento que aparece tras el elemento raíz debe tener el formato correcto.
+2026-01-05 18:22:41.314 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ❌ Error al obtener versión DLL desde https://euromundomxn.juniper.es: El marcador en el documento que aparece tras el elemento raíz debe tener el formato correcto.
+2026-01-05 18:22:41.330 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-05 18:22:41.330 DEBUG testcase.Login_mxn                       - 5: comment(📦 Versión de DLL detectada: $version)
+2026-01-05 18:22:41.330 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada: N/A
+2026-01-05 18:22:41.338 DEBUG testcase.Login_mxn                       - 6: setText(findTestObject("Euromundo/login/input_User"), username)
+2026-01-05 18:22:42.650 DEBUG testcase.Login_mxn                       - 7: setText(findTestObject("Euromundo/login/input_Pss"), password)
+2026-01-05 18:22:43.433 DEBUG testcase.Login_mxn                       - 8: click(findTestObject("Euromundo/login/checkbox_TyC"))
+2026-01-05 18:22:43.876 DEBUG testcase.Login_mxn                       - 9: click(findTestObject("Euromundo/login/button_Login"))
+2026-01-05 18:22:44.273 DEBUG testcase.Login_mxn                       - 10: waitForElementClickable(findTestObject("Euromundo/gran_deal/repository_GD_nal/button_Search_GD"), 10)
+2026-01-05 18:22:54.546 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Web element with id: 'Object Repository/Euromundo/gran_deal/repository_GD_nal/button_Search_GD' located by 'By.xpath: //*[@id="packagespot-searcher"]/div[2]/div/div[1]/div[5]/button' not found
+2026-01-05 18:22:54.546 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Euromundo/Login/Login_mxn
+2026-01-05 18:22:54.546 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-05 18:22:54.562 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: waitForElementClickable(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"), 10)
+2026-01-05 18:22:54.878 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: mouseOver(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"))
+2026-01-05 18:22:55.320 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 4: click(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/select_paquete_nal"))
+2026-01-05 18:22:59.348 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 5: click(findTestObject("Euromundo/book_steps/button_close_cookies"))
+2026-01-05 18:22:59.742 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 6: waitForElementClickable(findTestObject("Euromundo/book_steps/input_destination_inter"), 25)
+2026-01-05 18:23:24.763 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-05 18:23:24.775 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 7: selectOptionByValue(findTestObject("Euromundo/book_steps/input_destination_inter"), "35163", true)
+2026-01-05 18:23:34.833 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-05 18:23:35.599 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 8: waitForElementClickable(findTestObject("Euromundo/book_steps/select_origin_inter"), 25)
+2026-01-05 18:24:00.639 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-05 18:24:00.644 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 9: selectOptionByValue(findTestObject("Euromundo/book_steps/select_origin_inter"), "35908", true)
+2026-01-05 18:24:10.680 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-05 18:24:11.423 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 10: waitForElementClickable(findTestObject("Euromundo/book_steps/origin_date_inter"), 25)
+2026-01-05 18:24:12.919 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 11: utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo("Euromundo/book_steps/origin_date_inter")
+2026-01-05 18:24:14.103 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📅 Fecha aleatoria entre 3 y 4 meses: 05/04/2026
+2026-01-05 18:24:14.105 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo is PASSED
+2026-01-05 18:24:14.105 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 12: waitForElementClickable(findTestObject("Euromundo/widget/set_rooms_pax_inter"), 25)
+2026-01-05 18:24:14.453 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 13: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/widget/set_rooms_pax_inter"))
+2026-01-05 18:24:16.156 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-05 18:24:16.158 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 14: habitaciones = 1
+2026-01-05 18:24:16.164 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 15: adultos = [1]
+2026-01-05 18:24:16.168 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 16: ninos = [1]
+2026-01-05 18:24:16.172 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 17: infantes = [0]
+2026-01-05 18:24:16.176 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 18: edadesNinos =  }).collect({ -> ... })
+2026-01-05 18:24:16.194 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 19: edadesInfantes =  }).collect({ -> ... })
+2026-01-05 18:24:16.196 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 20: edadesNinosValidas = edadesNinos.every({ -> ... })
+2026-01-05 18:24:16.229 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 21: edadesInfantesValidas = edadesInfantes.every({ -> ... })
+2026-01-05 18:24:16.231 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 22: if (!(edadesNinosValidas) || !(edadesInfantesValidas))
+2026-01-05 18:24:16.238 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 23: else
+2026-01-05 18:24:16.238 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: markPassed(✅ Edades válidas: Niños $edadesNinos, Infantes $edadesInfantes)
+2026-01-05 18:24:16.257 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ ✅ Edades válidas: Niños [10], Infantes []
+2026-01-05 18:24:16.262 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 24: utils.configuration_rooms.configurarHabitacionesYPasajerosV2(habitaciones, adultos, ninos, infantes, edadesNinos, edadesInfantes)
+2026-01-05 18:24:24.800 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edades niños por habitación: [10]
+2026-01-05 18:24:24.803 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 👶 Edades infantes por habitación: []
+2026-01-05 18:24:24.804 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.configuration_rooms.configurarHabitacionesYPasajerosV2 is PASSED
+2026-01-05 18:24:24.806 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 25: edadesCapturadasNinos = []
+2026-01-05 18:24:24.808 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 26: edadesCapturadasInfantes = []
+2026-01-05 18:24:24.809 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 27: if (ninos.sum() > 0)
+2026-01-05 18:24:24.811 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: for ([i = 1, i <= ninos[0], (i++)])
+2026-01-05 18:24:24.813 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: objNino = new com.kms.katalon.core.testobject.TestObject(edad_nino_$i)
+2026-01-05 18:24:24.815 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: objNino.addProperty("xpath", EQUALS, //*[@id='select2-room-selector-1-children-age-1-$i-container'])
+2026-01-05 18:24:24.817 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: waitForElementVisible(objNino, 5)
+2026-01-05 18:24:25.313 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 4: edadTexto = getText(objNino).replaceAll("\D", "")
+2026-01-05 18:24:25.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 5: edad = (edadTexto?.isInteger()) ? edadTexto.toInteger() : -1
+2026-01-05 18:24:25.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 6: if (edad in (2..17))
+2026-01-05 18:24:25.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: edadesCapturadasNinos.add(edad)
+2026-01-05 18:24:25.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: comment(🧒 Edad Niño $i capturada: $edad)
+2026-01-05 18:24:25.628 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edad Niño 1 capturada: 10
+2026-01-05 18:24:25.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 28: if (infantes.sum() > 0)
+2026-01-05 18:24:25.646 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 29: click(findTestObject("Euromundo/book_steps/button_search_inter"))
+2026-01-05 18:24:26.079 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 30: tituloObj = new com.kms.katalon.core.testobject.TestObject(tituloDinamico)
+2026-01-05 18:24:26.082 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 31: tituloObj.addProperty("xpath", EQUALS, "(//div[contains(@class,'info-card__title')])[1]")
+2026-01-05 18:24:26.086 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 32: waitForElementVisible(tituloObj, 20)
+2026-01-05 18:24:43.401 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 33: tituloGuardado = getText(tituloObj)
+2026-01-05 18:24:43.699 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 34: mejorPrecioObj = TestObject().addProperty("xpath", EQUALS, "//span[contains(@class,'bestprice__amount')]")
+2026-01-05 18:24:43.699 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 35: mejorPrecio = utils.ValidacionPrecios.validarMejorPrecioEnResultados(mejorPrecioObj)
+2026-01-05 18:24:44.824 INFO  com.kms.katalon.core.util.KeywordUtil    - 💾 Mejor precio capturado del texto visible: 7274.0
+2026-01-05 18:24:44.827 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Validación de mejor precio exitosa. Precio final: 7274.0
+2026-01-05 18:24:44.829 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionPrecios.validarMejorPrecioEnResultados is PASSED
+2026-01-05 18:24:44.830 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 36: waitForElementClickable(findTestObject("Euromundo/book_steps/button_prebook_gd_nal"), 15)
+2026-01-05 18:24:45.128 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 37: click(findTestObject("Euromundo/book_steps/button_prebook_gd_nal"))
+2026-01-05 18:24:49.359 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 38: waitForElementClickable(findTestObject("Euromundo/book_steps/button_finalization_prebook"), 10)
+2026-01-05 18:24:50.082 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 39: policyFees = new com.kms.katalon.core.testobject.TestObject(policyFees)
+2026-01-05 18:24:50.093 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 40: policyFees.addProperty("xpath", EQUALS, "//div[contains(@class,'col-sm-12') and contains(normalize-space(.),'Reserva sujeta a gastos de cancelación')]")
+2026-01-05 18:24:50.096 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 41: if (waitForElementPresent(policyFees, 5, OPTIONAL))
+2026-01-05 18:24:55.145 WARN  k.k.c.w.k.b.WaitForElementPresentKeyword - Object 'policyFees' is not present after 5 second(s)
+2026-01-05 18:24:55.145 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 42: else
+2026-01-05 18:24:55.145 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ No se detectó política restrictiva, el flujo continúa.")
+2026-01-05 18:24:55.145 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ No se detectó política restrictiva, el flujo continúa.
+2026-01-05 18:24:55.161 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 43: edadesValidas = edadesCapturadasNinos.every({ -> ... }) && edadesCapturadasInfantes.every({ -> ... })
+2026-01-05 18:24:55.168 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 44: if (!(edadesValidas))
+2026-01-05 18:24:55.168 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 45: else
+2026-01-05 18:24:55.168 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: utils.PassengerFormHelper.fillPassengerData(edadesCapturadasNinos, edadesCapturadasInfantes)
+2026-01-05 18:24:55.958 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Tratamiento MR asignado por JavaScript para pax 1
+2026-01-05 18:24:55.962 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧾 Rellenando datos para pax 1 ➜ Tratamiento: MR, Edad: 30
+2026-01-05 18:24:58.073 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se encontró campo de correo para pax 1, se continúa sin error.
+2026-01-05 18:24:58.077 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Pax 1: Johana Martinez, 30 años, nacido el 08/09/1995
+2026-01-05 18:24:58.423 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Tratamiento MISS asignado por JavaScript para pax 2
+2026-01-05 18:24:58.426 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧾 Rellenando datos para pax 2 ➜ Tratamiento: MISS, Edad: 10
+2026-01-05 18:25:00.458 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se encontró campo de correo para pax 2, se continúa sin error.
+2026-01-05 18:25:00.462 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Pax 2: Valentina Rodriguez, 10 años, nacido el 27/08/2015
+2026-01-05 18:25:00.463 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.PassengerFormHelper.fillPassengerData is PASSED
+2026-01-05 18:25:00.465 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 46: otroTituloObj = new com.kms.katalon.core.testobject.TestObject(otroTitulo)
+2026-01-05 18:25:00.468 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 47: otroTituloObj.addProperty("xpath", EQUALS, "//*[@id="main-content"]/div[2]/div/div[3]/div[1]/div/div/div/div[1]/div[2]/div[1]")
+2026-01-05 18:25:00.472 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 48: tituloNuevo = getText(otroTituloObj)
+2026-01-05 18:25:00.762 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 49: if (tituloGuardado.equals(tituloNuevo))
+2026-01-05 18:25:00.762 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: println("✅ Los títulos son iguales")
+✅ Los títulos son iguales
+2026-01-05 18:25:00.772 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 51: warningPrecioObj = new com.kms.katalon.core.testobject.TestObject(warningPrecio)
+2026-01-05 18:25:00.772 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 52: warningPrecioObj.addProperty("xpath", EQUALS, "//div[@class='booking-warning__content']")
+2026-01-05 18:25:00.780 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 53: if (verifyElementPresent(warningPrecioObj, 5, OPTIONAL))
+2026-01-05 18:25:06.005 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'warningPrecio' located by 'By.xpath: //div[@class='booking-warning__content']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'warningPrecio' located by 'By.xpath: //div[@class='booking-warning__content']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at paquete_nal_para_1adl_1cnn_canal_mxn.run(paquete_nal_para_1adl_1cnn_canal_mxn:204)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767655348376.run(TempTestSuite1767655348376.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-05 18:25:06.012 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 54: else
+2026-01-05 18:25:06.012 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ No apareció ningún warning de cambio de precio")
+2026-01-05 18:25:06.015 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ No apareció ningún warning de cambio de precio
+2026-01-05 18:25:06.017 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 55: precioObj = new com.kms.katalon.core.testobject.TestObject(precio)
+2026-01-05 18:25:06.019 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 56: precioObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item booking-breakdown__item--total booking-breakdown__item--is-pay-web']//span[@class='booking-breakdown__item-price']")
+2026-01-05 18:25:06.019 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 57: comisionObj = new com.kms.katalon.core.testobject.TestObject(comision)
+2026-01-05 18:25:06.022 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 58: comisionObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item']//span[contains(text(),'Comisiones')]/following-sibling::span")
+2026-01-05 18:25:06.024 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 59: precioFinalObj = new com.kms.katalon.core.testobject.TestObject(precioFinal)
+2026-01-05 18:25:06.026 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 60: precioFinalObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item']//span[contains(text(),'Precio final')]/following-sibling::span")
+2026-01-05 18:25:06.030 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 61: totalAdeudadoObj = new com.kms.katalon.core.testobject.TestObject(totalAdeudado)
+2026-01-05 18:25:06.032 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 62: totalAdeudadoObj.addProperty("xpath", EQUALS, "//span[@class='agent-markup__total-due-price']")
+2026-01-05 18:25:06.034 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 63: utils.ValidacionesPrebook.validarPrecioPrebook(precioObj, comisionObj, precioFinalObj, totalAdeudadoObj, mejorPrecio)
+2026-01-05 18:25:06.662 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio: $ 7,274.00 MXN
+2026-01-05 18:25:06.670 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 7,274.00 MXN' | cleaned='7,274.00' | normalized='7274.00'
+2026-01-05 18:25:07.232 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Comisión: $ 0.00 MXN
+2026-01-05 18:25:07.233 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 0.00 MXN' | cleaned='0.00' | normalized='0.00'
+2026-01-05 18:25:07.773 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Final: $ 7,274.00 MXN
+2026-01-05 18:25:07.775 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 7,274.00 MXN' | cleaned='7,274.00' | normalized='7274.00'
+2026-01-05 18:25:08.330 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Total Adeudado: $ 7,274.00 MXN
+2026-01-05 18:25:08.332 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 7,274.00 MXN' | cleaned='7,274.00' | normalized='7274.00'
+2026-01-05 18:25:08.342 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📌 Precio: 7274.0 | Comisión: 0.0 | Precio Final: 7274.0 | Total Adeudado: 7274.0 | Mejor Precio: 7274.0
+2026-01-05 18:25:08.351 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio Final (7274.0) ≈ Precio (7274.0) - Comisión (0.0)
+2026-01-05 18:25:08.357 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (7274.0) ≈ Total Adeudado (7274.0)
+2026-01-05 18:25:08.357 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Mejor Precio (7274.0) ≈ Total Adeudado (7274.0)
+2026-01-05 18:25:08.359 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Todas las validaciones de precios OK
+2026-01-05 18:25:08.359 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionesPrebook.validarPrecioPrebook is PASSED
+2026-01-05 18:25:08.362 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 64: click(findTestObject("Euromundo/book_steps/button_finalization_prebook"))
+2026-01-05 18:25:17.967 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 65: paxDropdown = new com.kms.katalon.core.testobject.TestObject(dynamicPaxSelect)
+2026-01-05 18:25:17.969 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 66: paxDropdown.addProperty("xpath", EQUALS, "//select[contains(@class,'js-set-confirm-pax-data')]")
+2026-01-05 18:25:17.973 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 67: dropdownElem = findWebElement(paxDropdown, 10)
+2026-01-05 18:25:18.892 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 68: Select(dropdownElem).selectByIndex(1)
+2026-01-05 18:25:19.473 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 69: setText(findTestObject("Euromundo/checkout_page/passport_booking_holder"), "102635")
+2026-01-05 18:25:22.650 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 70: cityObj = new com.kms.katalon.core.testobject.TestObject(dynamicCity)
+2026-01-05 18:25:22.654 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 71: cityObj.addProperty("xpath", EQUALS, "//input[@name='holder_city']")
+2026-01-05 18:25:22.654 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 72: waitForElementVisible(cityObj, 10)
+2026-01-05 18:25:22.944 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 73: setText(cityObj, "Bogotá")
+2026-01-05 18:25:23.764 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 74: zipObj = new com.kms.katalon.core.testobject.TestObject(dynamicZip)
+2026-01-05 18:25:23.765 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 75: zipObj.addProperty("xpath", EQUALS, "//input[@name='holder_zipcode']")
+2026-01-05 18:25:23.769 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 76: waitForElementVisible(zipObj, 10)
+2026-01-05 18:25:24.062 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 77: setText(zipObj, "110111")
+2026-01-05 18:25:24.932 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 78: addrObj = new com.kms.katalon.core.testobject.TestObject(dynamicAddress)
+2026-01-05 18:25:24.939 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 79: addrObj.addProperty("xpath", EQUALS, "//input[@name='holder_address']")
+2026-01-05 18:25:24.939 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 80: waitForElementVisible(addrObj, 10)
+2026-01-05 18:25:25.239 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 81: setText(addrObj, "Virrey")
+2026-01-05 18:25:26.089 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 82: setText(findTestObject("Euromundo/checkout_page/phone_booking_holder"), "3218111877")
+2026-01-05 18:25:26.980 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 83: setText(findTestObject("Euromundo/checkout_page/agent_email"), "johana.gomez@ejuniper.com")
+2026-01-05 18:25:27.883 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 84: setText(findTestObject("Euromundo/checkout_page/set_name_billing_info"), "Johana Gomez")
+2026-01-05 18:25:28.782 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 85: setText(findTestObject("Euromundo/checkout_page/set_address_billing_info"), "Virrey")
+2026-01-05 18:25:29.665 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 86: setText(findTestObject("Euromundo/checkout_page/set_rfc_billing_info"), "21312344")
+2026-01-05 18:25:30.555 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 87: setText(findTestObject("Euromundo/checkout_page/set_email_billing_info"), "johana.gomez@ejuniper.com")
+2026-01-05 18:25:31.463 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 88: click(findTestObject("Euromundo/checkout_page/checkbox_fare_breakdown"))
+2026-01-05 18:25:31.990 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 89: click(findTestObject("Euromundo/checkout_page/checkbox_importantInfo"))
+2026-01-05 18:25:32.722 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 90: tituloBookObj = new com.kms.katalon.core.testobject.TestObject(tituloBookObj)
+2026-01-05 18:25:32.722 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 91: tituloBookObj.addProperty("xpath", EQUALS, "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[2]/table/tbody/tr[1]/td/div[2]/div[1]/span")
+2026-01-05 18:25:32.728 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 92: tituloBook = getText(tituloBookObj).trim()
+2026-01-05 18:25:33.012 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 93: logInfo(📌 Título Book: $tituloBook)
+2026-01-05 18:25:33.023 INFO  com.kms.katalon.core.util.KeywordUtil    - 📌 Título Book: PRUEBAS TARIFAS ESPECIALES Y4
+2026-01-05 18:25:33.024 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 94: if (tituloNuevo == tituloBook)
+2026-01-05 18:25:33.026 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ Los títulos coinciden")
+2026-01-05 18:25:33.027 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Los títulos coinciden
+2026-01-05 18:25:33.029 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 96: precioObj_pas = byXpath("precioObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[1]")
+2026-01-05 18:25:33.032 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-05 18:25:33.034 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-05 18:25:33.037 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-05 18:25:33.039 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 97: comisionObj_pas = byXpath("comisionObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div/div[1]")
+2026-01-05 18:25:33.041 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-05 18:25:33.041 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-05 18:25:33.042 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-05 18:25:33.046 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 98: precioFinalObj_pas = byXpath("precioFinalObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div/div[3]")
+2026-01-05 18:25:33.047 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-05 18:25:33.048 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-05 18:25:33.049 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-05 18:25:33.050 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 99: precioPaqueteObj_pas = byXpath("precioPaqueteObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]/td")
+2026-01-05 18:25:33.051 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-05 18:25:33.051 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-05 18:25:33.051 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-05 18:25:33.051 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 100: utils.ValidacionesPrecios.validarPrecio(precioObj_pas, comisionObj_pas, precioFinalObj_pas, precioPaqueteObj_pas, mejorPrecio)
+2026-01-05 18:25:34.236 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio (total): Precio
+$ 7,274.00 MXN
+2026-01-05 18:25:35.331 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Comisión: Comisiones
+$ 0.00 MXN
+2026-01-05 18:25:36.462 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Final: Precio final
+$ 7,274.00 MXN
+2026-01-05 18:25:37.850 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Paquete: Paquete precio
+$ 7,274.00 MXN
+2026-01-05 18:25:37.850 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📊 Precio: 7274.0 | Comisión: 0.0 | PrecioFinal: 7274.0 | PrecioPaquete: 7274.0 | MejorPrecio: 7274.0
+2026-01-05 18:25:37.864 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (7274.0) ≈ Mejor Precio (7274.0)
+2026-01-05 18:25:37.865 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (7274.0) ≈ Precio Paquete (7274.0)
+2026-01-05 18:25:37.878 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio Final (7274.0) ≈ Precio (7274.0) - Comisión (0.0) = 7274,00
+2026-01-05 18:25:37.883 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Todas las validaciones de precios OK
+2026-01-05 18:25:37.884 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionesPrecios.validarPrecio is PASSED
+2026-01-05 18:25:37.886 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 101: btnDesglose = TestObject(btnDesglose).addProperty("xpath", EQUALS, "//button[contains(.,'Desglose') or contains(.,'Breakdown') or contains(@class,'js-open-breakdown')]")
+2026-01-05 18:25:37.890 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 102: tablaDesgloseTable = TestObject(tablaDesgloseTable).addProperty("xpath", EQUALS, "//table[contains(@class,'confirm-booking__tableBreakdown__table')]")
+2026-01-05 18:25:37.893 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 103: waitForElementPresent(tablaDesgloseTable, 10, OPTIONAL)
+2026-01-05 18:25:38.157 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 104: scrollToElement(tablaDesgloseTable, 3)
+2026-01-05 18:25:38.432 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 105: waitForElementVisible(tablaDesgloseTable, 10, OPTIONAL)
+2026-01-05 18:25:38.681 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 106: try
+2026-01-05 18:25:38.690 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: valTabla = new utils.ValidacionesPreciosTabla()
+2026-01-05 18:25:38.699 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: if (verifyElementPresent(tablaDesgloseTable, 2, OPTIONAL))
+2026-01-05 18:25:38.958 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: valTabla.validacionDesglose(mejorPrecio)
+2026-01-05 18:25:48.983 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'Total Reserva Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[2]' not found
+2026-01-05 18:25:48.984 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'Total Reserva Comisionable'
+2026-01-05 18:25:59.112 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'IVA Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[3]' not found
+2026-01-05 18:25:59.127 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'IVA Comisionable'
+2026-01-05 18:26:09.261 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'Tarifa Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[4]' not found
+2026-01-05 18:26:09.275 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'Tarifa Comisionable'
+2026-01-05 18:26:19.762 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to get text of object '' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object ''
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at utils.ValidacionesPreciosTabla.validacionDesglose(validacion_tabla_desglose.groovy:33)
+	at paquete_nal_para_1adl_1cnn_canal_mxn.run(paquete_nal_para_1adl_1cnn_canal_mxn:390)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767655348376.run(TempTestSuite1767655348376.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: '' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[5]' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at utils.ValidacionesPreciosTabla.validacionDesglose(validacion_tabla_desglose.groovy:33)
+	at Script1750110701689.run(Script1750110701689.groovy:390)
+	... 15 more
+)
+2026-01-05 18:26:19.781 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 107: catch (Throwable t)
+2026-01-05 18:26:19.782 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: comment(ℹ️ Saltando validación de tabla: clase/método no disponible: $t.message)
+2026-01-05 18:26:19.794 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ℹ️ Saltando validación de tabla: clase/método no disponible: Unable to get text of object ''
+2026-01-05 18:26:19.794 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 109: click(findTestObject("Euromundo/checkout_page/checkbox_TyC_checkout"))
+2026-01-05 18:26:20.294 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 110: click(findTestObject("Euromundo/book_steps/button_finalization_book"))
+2026-01-05 18:26:30.649 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 111: click(findTestObject("Euromundo/book_steps/button_cancel_prebook"))
+2026-01-05 18:26:34.118 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 112: click(findTestObject("Euromundo/book_steps/button_cancel_prebook_hotel"))
+2026-01-05 18:26:36.278 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 113: click(findTestObject("Euromundo/book_steps/button_cancel_book"))
+2026-01-05 18:26:38.052 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 114: waitForAlert(10)
+2026-01-05 18:26:38.117 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 115: acceptAlert()
+2026-01-05 18:26:38.145 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 116: alertCancel = new com.kms.katalon.core.testobject.TestObject(dynamic/alertCancel)
+2026-01-05 18:26:38.148 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 117: alertCancel.addProperty("xpath", EQUALS, "//p[contains(@class,'booking-details__status-text') and contains(text(),'Su reserva ha sido cancelada.')]")
+2026-01-05 18:26:38.149 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 118: waitForElementVisible(alertCancel, 10)
+2026-01-05 18:26:44.097 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 119: scrollToElement(findTestObject("Euromundo/book_steps/bookings"), 10)
+2026-01-05 18:26:44.397 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 120: actualText = getText(alertCancel)
+2026-01-05 18:26:44.689 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 121: verifyMatch(actualText.trim(), "Su reserva ha sido cancelada.", false)
+2026-01-05 18:26:44.714 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 122: comment("✅ El texto de cancelación se encontró correctamente.")
+2026-01-05 18:26:44.716 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ El texto de cancelación se encontró correctamente.
+2026-01-05 18:26:45.735 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-05 18:26:46.328 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📸 Captura final guardada en: C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260105_182232/Fin_Test_Cases_Euromundo_Paquete_Basico_paquete_nal_para_1adl_1cnn_canal_mxn.png
+2026-01-05 18:26:46.328 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <img src='C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260105_182232/Fin_Test_Cases_Euromundo_Paquete_Basico_paquete_nal_para_1adl_1cnn_canal_mxn.png' width='800'/>
+2026-01-05 18:26:46.946 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 💾 Localizador capturado correctamente: 4PTW54
+2026-01-05 18:26:47.761 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-05 18:26:48.822 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ℹ️ Localizador obtenido desde pantalla: 4PTW54

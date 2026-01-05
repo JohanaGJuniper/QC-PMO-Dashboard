@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>
-				<title>PMO Final Report</title>
+				<title>PMO Report - All Scenarios</title>
 			<style>
 				body{font-family:'Segoe UI',Arial;background:#F5F7FA;color:#2f4050;padding:25px;}
 				.header{background:#fff;padding:15px 20px;border-radius:10px;
@@ -101,10 +101,10 @@
 			</head><body>
 				<div class='header'>
 					<img src='file:///C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Include/images/juniper-logo.png' alt='Juniper Logo'>
-					<h2>📘 PMO Final Report</h2>
-					<p>🕓 Execution Date: 2026-01-05 17:50:59</p>
-					<p>📦 <b>Release:</b> 6.26.105.1</p>
-					<p>⏱️ <b>Execution Duration:</b> 00:02:42</p>
+					<h2>📘 PMO Report - All Executed Scenarios</h2>
+					<p>🕓 Execution Date: 2026-01-05 18:26:49</p>
+					<p>📦 <b>Release:</b> N/A</p>
+					<p>⏱️ <b>Execution Duration:</b> 00:04:16</p>
 					
 				<style>
 				  .dashboard {
@@ -130,13 +130,13 @@
 
 				  @keyframes fillDonut {
 					  0% { background: conic-gradient(#00C853 0deg, #FB8C00 0); }
-					  100% { background: conic-gradient(#00C853 0deg,#FB8C00 0deg,#FF1744 0); }
+					  100% { background: conic-gradient(#00C853 360deg,#FB8C00 360deg,#FF1744 0); }
 				  }
 
 				  .donut-wrapper { width:130px;height:130px;margin:10px auto;position:relative; }
 				  .donut {
 					width:130px;height:130px;border-radius:50%;
-					background:conic-gradient(#00C853 0deg,#FB8C00 0deg,#FF1744 0);
+					background:conic-gradient(#00C853 360deg,#FB8C00 360deg,#FF1744 0);
 					display:flex;align-items:center;justify-content:center;
 					animation:fillDonut 1.5s ease-out forwards;
 				  }
@@ -154,15 +154,15 @@
 				  <div class='metric'>
 					<div class='label'>Test Results</div>
 					<div class='bar-container'>
-					  <div class='bar passed' style='height:0px'><div class='bar-value'>0</div></div>
+					  <div class='bar passed' style='height:100px'><div class='bar-value'>1</div></div>
 					  <div class='bar failed' style='height:0px'><div class='bar-value'>0</div></div>
-					  <div class='bar error' style='height:100px'><div class='bar-value'>1</div></div>
+					  
 					</div>
 				  </div>
 
 				  <div class='metric'>
 					<div class='label'>Success Rate</div>
-					<div class='donut-wrapper'><div class='donut'><div class='donut-inner'>0.0%</div></div></div>
+					<div class='donut-wrapper'><div class='donut'><div class='donut-inner'>100.0%</div></div></div>
 				  </div>
 				</div>
 				
@@ -175,24 +175,21 @@
 				Mostrando todos los resultados
 			</p>
 			
-					
-			  <div class="action-buttons">
-			    <a href='stabilization_test_2ADL_1CNN_PMO_Log_Report_PMO.csv' class='btn-action btn-csv'>⬇️ Download CSV</a>
-			    <button class="btn-action btn-print" onclick="window.print()">🖨️ Exportar a PDF</button>
-			  </div>
-			
+
+				<div class="action-buttons">
+				  <a href="stabilization_test_2ADL_1CNN_PMO_Log_Report_PMO.csv" class="btn-action btn-csv">⬇️ Download CSV</a>
+				  <button class="btn-action btn-print" onclick="window.print()">🖨️ Exportar a PDF</button>
 				</div>
-				<table>
-					<thead>
-					  <tr>
-						<th style='width:50%;'>Scenario</th>
-						<th style='width:25%;'>Booking</th>
-						<th style='width:25%;'>Status</th>
-					  </tr>
-					</thead>
-					<tbody>
-				<tr class='error'><td>paquete_nal_para_1adl_1cnn_canal_mxn</td><td><i>No booking</i></td><td class='error'>❌ ERROR</td></tr>
-					</tbody></table>
+
+				</div>
+				
+					<div class='card'>
+						<p><b>🧩 Scenario:</b> paquete_nal_para_1adl_1cnn_canal_mxn</p>
+						<p><b>🔗 Booking:</b> <a href='https://euromundootn.juniper.es/users/bookings.aspx?onlyQuotations=false&bookingCode=4PTW54' target='_blank'>4PTW54</a></p>
+						<p><b>📊 Status:</b> <span class='passed'>✅ PASSED</span></p>
+						
+						<p><b>🖼️ Evidence:</b></p><img src='screenshots/PASSED_paquete_nal_para_1adl_1cnn_canal_mxn_2026-01-05_18-26-47.png' class='evidencia'/>
+					</div>
 					
 			<script>
 			  (function(){
@@ -230,6 +227,4 @@
 				t.textContent = visible ? 'View more' : 'View less';
 			  }
 			</script>
-			
-					</body></html>
-				
+			</body></html>

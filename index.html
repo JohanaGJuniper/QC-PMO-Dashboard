@@ -62,6 +62,15 @@ hr{
   border-top:1px solid #e0e0e0;
   margin:30px 0
 }
+
+#searchInput{
+  width:100%;
+  max-width:480px;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
 </style>
 </head>
 
@@ -76,19 +85,12 @@ hr{
 <h1>📊 PMO Dashboard – Euromundo</h1>
 <p class="subtitle">Repositorio automático de ejecuciones Katalon</p>
 
+<!-- 🔍 Buscador -->
 <div style="margin:20px 0">
   <input
     id="searchInput"
     type="text"
     placeholder="🔍 Buscar por Execution ID, fecha, suite o release"
-    style="
-      width:100%;
-      max-width:480px;
-      padding:12px 14px;
-      border-radius:10px;
-      border:1px solid #ccc;
-      font-size:14px;
-    "
   >
 </div>
 
@@ -109,13 +111,13 @@ fetch('executions/executions.json')
   .then(data => {
     if (!data || !data.length) return;
 
+    // 🔹 Extraer ExecutionId desde el path
+    data.forEach(exec => {
+      exec.executionId = exec.path.split('/')[1];
+    });
+
     const latest = data[data.length - 1];
     const history = data.slice().reverse();
-
-  // 🔹 Extraer ExecutionId desde el path
-  data.forEach(exec => {
-    exec.executionId = exec.path.split('/')[1];
-  });
 
     // ===== Última ejecución =====
     document.getElementById('latestExecution').innerHTML = `
@@ -127,7 +129,6 @@ fetch('executions/executions.json')
           <b>Suite:</b> ${latest.suite}<br>
           <b>Release:</b> ${latest.release || 'N/A'}
         </div>
-
         <a class="btn final" href="${latest.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
           📘 Reporte FINAL
         </a>
@@ -137,27 +138,48 @@ fetch('executions/executions.json')
       </div>
     `;
 
-    // ===== Histórico =====
-    const historyDiv = document.getElementById('history');
-    historyDiv.innerHTML = '';
+    // ===== Render histórico =====
+    function renderHistory(list){
+      const historyDiv = document.getElementById('history');
+      historyDiv.innerHTML = '';
 
-    history.forEach(exec => {
-      historyDiv.innerHTML += `
-        <div class="card">
-          <div class="exec-title">${exec.date}</div>
-          <div class="exec-meta">
-            <b>Suite:</b> ${exec.suite}<br>
-            <b>Release:</b> ${exec.release || 'N/A'}
+      list.forEach(exec => {
+        historyDiv.innerHTML += `
+          <div class="card">
+            <div class="exec-title">Execution ID: ${exec.executionId}</div>
+            <div class="exec-meta">
+              <b>Fecha:</b> ${exec.date}<br>
+              <b>Suite:</b> ${exec.suite}<br>
+              <b>Release:</b> ${exec.release || 'N/A'}
+            </div>
+            <a class="btn final" href="${exec.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
+              📘 Final
+            </a>
+            <a class="btn all" href="${exec.path}" target="_blank">
+              📂 All
+            </a>
           </div>
-          <a class="btn final" href="${exec.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
-            📘 Final
-          </a>
-          <a class="btn all" href="${exec.path}" target="_blank">
-            📂 All
-          </a>
-        </div>
-      `;
+        `;
+      });
+    }
+
+    renderHistory(history);
+
+    // ===== Filtro =====
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', e => {
+      const value = e.target.value.toLowerCase();
+
+      const filtered = history.filter(exec =>
+        exec.executionId.toLowerCase().includes(value) ||
+        exec.date.toLowerCase().includes(value) ||
+        exec.suite.toLowerCase().includes(value) ||
+        (exec.release && exec.release.toLowerCase().includes(value))
+      );
+
+      renderHistory(filtered);
     });
+
   })
   .catch(err => console.error('Error cargando executions.json', err));
 </script>
