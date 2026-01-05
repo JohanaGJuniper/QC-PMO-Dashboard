@@ -11,29 +11,56 @@ body{
   padding:30px;
   color:#1a2b49
 }
+h1{margin-bottom:5px}
+p.subtitle{margin-top:0;color:#555}
+
 .card{
   background:#fff;
-  border-radius:12px;
+  border-radius:14px;
   padding:20px;
   margin-bottom:20px;
   box-shadow:0 4px 12px rgba(0,0,0,.08)
 }
+
+.card.latest{
+  border-left:6px solid #2ECC71;
+}
+
+.exec-title{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:6px
+}
+
+.exec-meta{
+  font-size:14px;
+  color:#555;
+  margin-bottom:12px
+}
+
 a.btn{
   display:inline-block;
   margin-right:10px;
-  margin-top:10px;
+  margin-top:6px;
   padding:10px 16px;
   border-radius:8px;
   text-decoration:none;
   font-weight:600;
+  font-size:14px
 }
-.final{
+.btn.final{
   background:#2F3A56;
   color:white
 }
-.all{
+.btn.all{
   background:#E0E7FF;
   color:#1a2b49
+}
+
+hr{
+  border:none;
+  border-top:1px solid #e0e0e0;
+  margin:30px 0
 }
 </style>
 </head>
@@ -47,20 +74,14 @@ a.btn{
 </div>
 
 <h1>📊 PMO Dashboard – Euromundo</h1>
-<p>Repositorio automático de ejecuciones Katalon</p>
+<p class="subtitle">Repositorio automático de ejecuciones Katalon</p>
 
-<div class="card">
-  <h3 id="execTitle">🟢 Última Ejecución</h3>
-  <p id="execDesc"></p>
+<div id="latestExecution"></div>
 
-  <a id="btnFinal" class="btn final" target="_blank">
-    📘 Reporte FINAL
-  </a>
+<hr>
 
-  <a id="btnAll" class="btn all" target="_blank">
-    📂 Reporte ALL
-  </a>
-</div>
+<h2>📚 Histórico de ejecuciones</h2>
+<div id="history"></div>
 
 <p style="margin-top:40px;font-size:13px;color:#777">
 Dashboard generado automáticamente por Katalon
@@ -68,21 +89,52 @@ Dashboard generado automáticamente por Katalon
 
 <script>
 fetch('executions/executions.json')
-  .then(response => response.json())
+  .then(r => r.json())
   .then(data => {
     if (!data || !data.length) return;
 
-    const last = data[data.length - 1];
+    const latest = data[data.length - 1];
+    const history = data.slice().reverse();
 
-    document.getElementById('execTitle').textContent =
-      '🟢 Última Ejecución – ' + last.date;
+    // ===== Última ejecución =====
+    document.getElementById('latestExecution').innerHTML = `
+      <div class="card latest">
+        <div class="exec-title">🟢 Última Ejecución</div>
+        <div class="exec-meta">
+          <b>Fecha:</b> ${latest.date}<br>
+          <b>Suite:</b> ${latest.suite}<br>
+          <b>Release:</b> ${latest.release || 'N/A'}
+        </div>
+        <a class="btn final" href="${latest.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
+          📘 Reporte FINAL
+        </a>
+        <a class="btn all" href="${latest.path}" target="_blank">
+          📂 Reporte ALL
+        </a>
+      </div>
+    `;
 
-    document.getElementById('execDesc').textContent =
-      last.suite || '';
+    // ===== Histórico =====
+    const historyDiv = document.getElementById('history');
+    historyDiv.innerHTML = '';
 
-    document.getElementById('btnAll').href = last.path;
-    document.getElementById('btnFinal').href =
-      last.path.replace('Report_PMO_All.html', 'Report_PMO_Final.html');
+    history.forEach(exec => {
+      historyDiv.innerHTML += `
+        <div class="card">
+          <div class="exec-title">${exec.date}</div>
+          <div class="exec-meta">
+            <b>Suite:</b> ${exec.suite}<br>
+            <b>Release:</b> ${exec.release || 'N/A'}
+          </div>
+          <a class="btn final" href="${exec.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
+            📘 Final
+          </a>
+          <a class="btn all" href="${exec.path}" target="_blank">
+            📂 All
+          </a>
+        </div>
+      `;
+    });
   })
   .catch(err => console.error('Error cargando executions.json', err));
 </script>
