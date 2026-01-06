@@ -1,4 +1,5 @@
-*.html filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
+# SOLO reportes PMO
+executions/**/*.html filter=lfs diff=lfs merge=lfs -text
+executions/**/*.pdf  filter=lfs diff=lfs merge=lfs -text
+executions/**/*.zip  filter=lfs diff=lfs merge=lfs -text
+
