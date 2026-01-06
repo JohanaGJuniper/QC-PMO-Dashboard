@@ -1,0 +1,410 @@
+<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'>
+				<title>PMO Report - All Scenarios</title>
+			<style>
+				body{font-family:'Segoe UI',Arial;background:#F5F7FA;color:#2f4050;padding:25px;}
+				.header{background:#fff;padding:15px 20px;border-radius:10px;
+						box-shadow:0 2px 8px rgba(0,0,0,0.08);margin-bottom:25px;}
+				.header img{max-width:160px;margin-bottom:8px;}
+				h2{color:#1a2b49;margin:5px 0;}
+				p{margin:5px 0;color:#555;}
+
+				table{width:98%;margin:0 auto;border-collapse:collapse;text-align:center;
+					  background:white;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+				th,td{padding:12px 10px;border-bottom:1px solid #D9D9D9;color:#2f4050;
+					  text-align:center;vertical-align:middle;}
+				th{background:#2F3A56;color:white;text-transform:uppercase;font-weight:600;}
+				td a{color:#1a2b49;text-decoration:underline;font-weight:500;display:inline-block;}
+
+				.passed { color:#00C853;font-weight:bold;text-shadow:0 0 6px rgba(0,200,83,0.45); }
+				.failed { color:#FB8C00;font-weight:bold;text-shadow:0 0 6px rgba(251,140,0,0.45); }
+				.error  { color:#FF1744;font-weight:bold;text-shadow:0 0 6px rgba(255,23,68,0.5); }
+
+				.card{
+					background:#fff;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.08);
+					padding:14px;margin-bottom:18px;
+				}
+				.toggle-btn{color:#007bff;cursor:pointer;font-size:13px;margin-left:6px;}
+				.hidden-text{display:none;margin-top:5px;font-size:13px;color:#555;}
+
+				a.csv,a.pdf{
+					background:#2F3A56;color:white;padding:6px 12px;border-radius:6px;
+					text-decoration:none;font-size:13px;margin-top:12px;display:inline-block;margin-right:10px;
+				}
+				img.evidencia {max-width:600px;width:100%;border-radius:8px;
+					box-shadow:0 2px 8px rgba(0,0,0,0.15);margin:12px auto;display:block;}
+
+				.report-filter-bar{display:flex;gap:12px;align-items:center;
+					background:#f4f6f8;padding:10px 14px;border-radius:12px;
+					margin:18px 0;border:1px solid #e5e9ef;font-family:'Segoe UI',Arial;}
+
+				.report-filter-bar input{flex:1;padding:10px 12px;border:1px solid #cfd6e4;
+					border-radius:10px;font-size:14px;outline:none;transition:0.2s;}
+				.report-filter-bar input:focus{border-color:#0078D4;box-shadow:0 0 3px rgba(0,120,212,0.3);}
+
+				@media print {
+				  #filtro,#contadorFilas,.report-filter-bar{display:none !important;}
+				}
+
+				/* ===== CONTENEDOR DE BOTONES ===== */
+				.action-buttons{
+				  display: flex;
+				  gap: 12px;
+				  align-items: center;
+				  margin-top: 10px;
+				}
+				
+				/* ===== BOTÓN BASE (CSV + PDF) ===== */
+				.btn-action{
+				  display: inline-flex;
+				  align-items: center;
+				  gap: 6px;
+				  padding: 8px 14px;
+				  border-radius: 8px;
+				  font-size: 14px;
+				  font-weight: 500;
+				  cursor: pointer;
+				  border: none;
+				  text-decoration: none;
+				  line-height: 1;
+				}
+				
+				/* ===== CSV ===== */
+				.btn-csv{
+				  background: #2F3A56;
+				  color: #fff;
+				}
+				.btn-csv:hover{
+				  background: #1f2a42;
+				}
+				
+				/* ===== PDF ===== */
+				.btn-print{
+				  background: #0078D4;
+				  color: #fff;
+				}
+				.btn-print:hover{
+				  background: #005A9E;
+				}
+				
+				/* ===== IMPRESIÓN ===== */
+				@media print {
+				  .action-buttons,
+				  #filtro,
+				  #contadorFilas,
+				  .report-filter-bar {
+				    display: none !important;
+				  }
+				}
+
+
+			</style>
+			</head><body>
+				<div class='header'>
+					<img src='file:///C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Include/images/juniper-logo.png' alt='Juniper Logo'>
+					<h2>📘 PMO Report - All Executed Scenarios</h2>
+					<p>🕓 Execution Date: 2026-01-06 12:41:21</p>
+					<p>📦 <b>Release:</b> 6.26.105.1</p>
+					<p>⏱️ <b>Execution Duration:</b> 00:12:26</p>
+					
+				<style>
+				  .dashboard {
+					display: flex; justify-content: space-between; gap: 15px;
+					margin: 20px 0; flex-wrap: wrap;
+				  }
+				  .metric {
+					background:#fff;border-radius:12px;flex:1;text-align:center;
+					padding:20px 10px;box-shadow:0 2px 8px rgba(0,0,0,0.08);
+				  }
+				  .metric b { font-size:28px;color:#003366; }
+				  .label { font-size:15px;color:#1a2b49;font-weight:600; }
+
+				  .bar-container { display:flex;justify-content:center;align-items:flex-end;height:120px;gap:40px;margin-top:8px; }
+				  .bar { width:55px;border-radius:10px;position:relative;transition:height .4s;
+				  box-shadow:inset 0 0 6px rgba(255,255,255,0.3),0 3px 6px rgba(0,0,0,0.1); }
+
+				  .bar.passed { background:linear-gradient(180deg,#00FF7F,#00C853);border:1px solid #00E676; }
+				  .bar.failed { background:linear-gradient(180deg,#FFC107,#FB8C00);border:1px solid #FFA726; }
+				  .bar.error  { background:linear-gradient(180deg,#FF5252,#FF1744);border:1px solid #FF1744; }
+
+				  .bar-value { position:absolute;top:-22px;width:100%;font-weight:600;color:#1a2b49; }
+
+				  @keyframes fillDonut {
+					  0% { background: conic-gradient(#00C853 0deg, #FB8C00 0); }
+					  100% { background: conic-gradient(#00C853 90deg,#FB8C00 360deg,#FF1744 0); }
+				  }
+
+				  .donut-wrapper { width:130px;height:130px;margin:10px auto;position:relative; }
+				  .donut {
+					width:130px;height:130px;border-radius:50%;
+					background:conic-gradient(#00C853 90deg,#FB8C00 360deg,#FF1744 0);
+					display:flex;align-items:center;justify-content:center;
+					animation:fillDonut 1.5s ease-out forwards;
+				  }
+				  .donut-inner {
+					width:75px;height:75px;background:#fff;border-radius:50%;
+					display:flex;align-items:center;justify-content:center;
+					font-weight:700;color:#1A2B49;font-size:18px;
+				  }
+				</style>
+
+				<div class='dashboard'>
+				  <div class='metric'><div style='font-size:46px;font-weight:700;color:#0078D4;'>4</div>
+				  <div class='label'>Executed Scenarios</div></div>
+
+				  <div class='metric'>
+					<div class='label'>Test Results</div>
+					<div class='bar-container'>
+					  <div class='bar passed' style='height:25px'><div class='bar-value'>1</div></div>
+					  <div class='bar failed' style='height:75px'><div class='bar-value'>3</div></div>
+					  
+					</div>
+				  </div>
+
+				  <div class='metric'>
+					<div class='label'>Success Rate</div>
+					<div class='donut-wrapper'><div class='donut'><div class='donut-inner'>25.0%</div></div></div>
+				  </div>
+				</div>
+				
+					
+			<div class='report-filter-bar'>
+			  <span class='label'>Filtro:</span>
+			  <input id='filtro' type='text' placeholder='Filtrar por Escenario, Localizador o Estado...'>
+			</div>
+			<p id='contadorFilas' style='font-size:13px;color:#555;margin-top:-10px;'>
+				Mostrando todos los resultados
+			</p>
+			
+
+				<div class="action-buttons">
+				  <a href="stabilization_test_2ADL_1CNN_PMO_Log_Report_PMO.csv" class="btn-action btn-csv">⬇️ Download CSV</a>
+				  <button class="btn-action btn-print" onclick="window.print()">🖨️ Exportar a PDF</button>
+				</div>
+
+				</div>
+				
+					<div class='card'>
+						<p><b>🧩 Scenario:</b> paquete_nal_para_1adl_1cnn_canal_mxn</p>
+						<p><b>🔗 Booking:</b> <a href='https://euromundootn.juniper.es/users/bookings.aspx?onlyQuotations=false&bookingCode=XJW1F2' target='_blank'>XJW1F2</a></p>
+						<p><b>📊 Status:</b> <span class='passed'>✅ PASSED</span></p>
+						
+						<p><b>🖼️ Evidence:</b></p><img src='screenshots/PASSED_paquete_nal_para_1adl_1cnn_canal_mxn_2026-01-06_12-34-26.png' class='evidencia'/>
+					</div>
+					
+					<div class='card'>
+						<p><b>🧩 Scenario:</b> paquete_inter_auv_1adl_1cnn</p>
+						<p><b>🔗 Booking:</b> <i>No booking</i></p>
+						<p><b>📊 Status:</b> <span class='failed'>⚠️ FAILED</span></p>
+						
+					  <p><b>⚠️ Failure reason:</b> Test Cases/Euromundo/Paquete_Basico/paquete_inter_auv_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFa...
+						<span id='viewmore-1' class='toggle-btn' onclick="toggleText('fail-1','viewmore-1')">View more</span>
+					  </p>
+					  <p id='fail-1' class='hidden-text'>iled(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_auv_1adl_1cnn.run(paquete_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more</p>
+					
+						<p><b>🖼️ Evidence:</b></p><img src='screenshots/FAILED_paquete_inter_auv_1adl_1cnn_2026-01-06_12-36-37.png' class='evidencia'/>
+					</div>
+					
+					<div class='card'>
+						<p><b>🧩 Scenario:</b> paquete_inter_walm_1adl_1cnn</p>
+						<p><b>🔗 Booking:</b> <i>No booking</i></p>
+						<p><b>📊 Status:</b> <span class='failed'>⚠️ FAILED</span></p>
+						
+					  <p><b>⚠️ Failure reason:</b> Test Cases/Euromundo/Paquete_Basico/paquete_inter_walm_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepF...
+						<span id='viewmore-2' class='toggle-btn' onclick="toggleText('fail-2','viewmore-2')">View more</span>
+					  </p>
+					  <p id='fail-2' class='hidden-text'>ailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_walm_1adl_1cnn.run(paquete_inter_walm_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //*[@id="results-list"]/div[2]/div/div[1]/article/div[1]/div[2]/div[1]' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more</p>
+					
+						<p><b>🖼️ Evidence:</b></p><img src='screenshots/FAILED_paquete_inter_walm_1adl_1cnn_2026-01-06_12-38-52.png' class='evidencia'/>
+					</div>
+					
+					<div class='card'>
+						<p><b>🧩 Scenario:</b> paquetes_inter_auv_1adl_1cnn</p>
+						<p><b>🔗 Booking:</b> <i>No booking</i></p>
+						<p><b>📊 Status:</b> <span class='failed'>⚠️ FAILED</span></p>
+						
+					  <p><b>⚠️ Failure reason:</b> Test Cases/Euromundo/Paquete_Basico/paquetes_inter_auv_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepF...
+						<span id='viewmore-3' class='toggle-btn' onclick="toggleText('fail-3','viewmore-3')">View more</span>
+					  </p>
+					  <p id='fail-3' class='hidden-text'>ailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquetes_inter_auv_1adl_1cnn.run(paquetes_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more</p>
+					
+						<p><b>🖼️ Evidence:</b></p><img src='screenshots/FAILED_paquetes_inter_auv_1adl_1cnn_2026-01-06_12-41-08.png' class='evidencia'/>
+					</div>
+					
+			<script>
+			  (function(){
+				function applyFilter(itemSelector){
+				  const input = document.getElementById('filtro');
+				  const counter = document.getElementById('contadorFilas');
+				  const items = document.querySelectorAll(itemSelector);
+				  if(!input || !items.length) return;
+				  input.addEventListener('keyup', function(){
+					const text = this.value.toLowerCase().trim();
+					let visibles = 0;
+					items.forEach(item=>{
+					  const show = item.textContent.toLowerCase().includes(text);
+					  item.style.display = show ? '' : 'none';
+					  if(show) visibles++;
+					});
+					counter.textContent = visibles === items.length
+					  ? "Mostrando todos los resultados"
+					  : "Mostrando " + visibles + " de " + items.length + " resultados";
+				  });
+				}
+				if(document.querySelectorAll('tbody tr').length > 0){
+				  applyFilter('tbody tr');
+				}else if(document.querySelectorAll('.card').length > 0){
+				  applyFilter('.card');
+				}
+			  })();
+
+			  function toggleText(id, triggerId){
+				var el = document.getElementById(id);
+				var t  = document.getElementById(triggerId);
+				if(!el || !t) return;
+				var visible = (el.style.display === 'block');
+				el.style.display = visible ? 'none' : 'block';
+				t.textContent = visible ? 'View more' : 'View less';
+			  }
+			</script>
+			</body></html>

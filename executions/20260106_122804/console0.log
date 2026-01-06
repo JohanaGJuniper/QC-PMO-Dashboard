@@ -1,0 +1,1123 @@
+2026-01-06 12:28:54.086 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Stabilization Testing/stabilization_test_2ADL_1CNN
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Johana Natali Gomez Munar
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Euromundo
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = johana.gomez - CMANJGOMEZ2.JUNIPER
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.35
+2026-01-06 12:28:54.353 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 10.3.2.0
+2026-01-06 12:28:54.779 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📁 Carpeta de capturas creada: C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854
+2026-01-06 12:28:55.829 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:28:55.829 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Euromundo/Paquete_Basico/paquete_nal_para_1adl_1cnn_canal_mxn
+2026-01-06 12:29:09.112 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:29:09.113 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:29:09.120 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🌐 TestCase: test cases/euromundo/paquete_basico/paquete_nal_para_1adl_1cnn_canal_mxn
+2026-01-06 12:29:09.128 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🔗 Dominio detectado: https://euromundomxn.juniper.es
+2026-01-06 12:29:09.135 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL: 6.26.105.1
+2026-01-06 12:29:09.637 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: callTestCase(findTestCase("Euromundo/Login/Login_mxn"), [:], STOP_ON_FAILURE)
+2026-01-06 12:29:09.771 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:29:09.771 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Euromundo/Login/Login_mxn
+2026-01-06 12:29:10.006 DEBUG testcase.Login_mxn                       - 1: url = "https://euromundomxn.juniper.es"
+2026-01-06 12:29:10.013 DEBUG testcase.Login_mxn                       - 2: openBrowser("https://euromundomxn.juniper.es")
+2026-01-06 12:29:10.449 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-06 12:29:10.571 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+ene. 06, 2026 12:29:13 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 143
+ene. 06, 2026 12:29:13 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-06 12:29:14.068 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = ab0c54871046fd4c7ab1ff3c1eb928c1
+2026-01-06 12:29:14.071 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-06 12:29:14.072 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-06 12:29:14.072 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2026-01-06 12:29:14.089 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-06 12:29:27.521 DEBUG testcase.Login_mxn                       - 3: maximizeWindow()
+2026-01-06 12:29:27.591 DEBUG testcase.Login_mxn                       - 4: version = utils.DLLUtils.getVersionDLL(url)
+2026-01-06 12:29:28.721 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:29:28.721 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:29:28.728 DEBUG testcase.Login_mxn                       - 5: comment(📦 Versión de DLL detectada: $version)
+2026-01-06 12:29:28.736 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada: 6.26.105.1
+2026-01-06 12:29:28.742 DEBUG testcase.Login_mxn                       - 6: setText(findTestObject("Euromundo/login/input_User"), username)
+2026-01-06 12:29:30.049 DEBUG testcase.Login_mxn                       - 7: setText(findTestObject("Euromundo/login/input_Pss"), password)
+2026-01-06 12:29:30.866 DEBUG testcase.Login_mxn                       - 8: click(findTestObject("Euromundo/login/checkbox_TyC"))
+2026-01-06 12:29:31.338 DEBUG testcase.Login_mxn                       - 9: click(findTestObject("Euromundo/login/button_Login"))
+2026-01-06 12:29:31.751 DEBUG testcase.Login_mxn                       - 10: waitForElementClickable(findTestObject("Euromundo/gran_deal/repository_GD_nal/button_Search_GD"), 10)
+2026-01-06 12:29:42.182 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Web element with id: 'Object Repository/Euromundo/gran_deal/repository_GD_nal/button_Search_GD' located by 'By.xpath: //*[@id="packagespot-searcher"]/div[2]/div/div[1]/div[5]/button' not found
+2026-01-06 12:29:42.190 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Euromundo/Login/Login_mxn
+2026-01-06 12:29:42.190 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:29:42.213 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: waitForElementClickable(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"), 10)
+2026-01-06 12:29:52.620 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:29:52.627 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: mouseOver(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"))
+2026-01-06 12:30:00.634 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 4: click(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/select_paquete_nal"))
+2026-01-06 12:30:01.821 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 5: click(findTestObject("Euromundo/book_steps/button_close_cookies"))
+2026-01-06 12:30:02.799 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 6: waitForElementClickable(findTestObject("Euromundo/book_steps/input_destination_inter"), 25)
+2026-01-06 12:30:27.827 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:30:27.834 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 7: selectOptionByValue(findTestObject("Euromundo/book_steps/input_destination_inter"), "35163", true)
+2026-01-06 12:30:37.906 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:30:38.682 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 8: waitForElementClickable(findTestObject("Euromundo/book_steps/select_origin_inter"), 25)
+2026-01-06 12:31:03.737 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 9: selectOptionByValue(findTestObject("Euromundo/book_steps/select_origin_inter"), "35908", true)
+2026-01-06 12:31:03.731 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:31:13.775 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:31:14.649 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 10: waitForElementClickable(findTestObject("Euromundo/book_steps/origin_date_inter"), 25)
+2026-01-06 12:31:16.273 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 11: utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo("Euromundo/book_steps/origin_date_inter")
+2026-01-06 12:31:17.443 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📅 Fecha aleatoria entre 3 y 4 meses: 06/04/2026
+2026-01-06 12:31:17.444 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo is PASSED
+2026-01-06 12:31:17.447 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 12: waitForElementClickable(findTestObject("Euromundo/widget/set_rooms_pax_inter"), 25)
+2026-01-06 12:31:17.827 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 13: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/widget/set_rooms_pax_inter"))
+2026-01-06 12:31:19.561 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:31:19.564 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 14: habitaciones = 1
+2026-01-06 12:31:19.567 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 15: adultos = [1]
+2026-01-06 12:31:19.569 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 16: ninos = [1]
+2026-01-06 12:31:19.573 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 17: infantes = [0]
+2026-01-06 12:31:19.576 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 18: edadesNinos =  }).collect({ -> ... })
+2026-01-06 12:31:19.594 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 19: edadesInfantes =  }).collect({ -> ... })
+2026-01-06 12:31:19.602 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 20: edadesNinosValidas = edadesNinos.every({ -> ... })
+2026-01-06 12:31:19.628 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 21: edadesInfantesValidas = edadesInfantes.every({ -> ... })
+2026-01-06 12:31:19.635 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 22: if (!(edadesNinosValidas) || !(edadesInfantesValidas))
+2026-01-06 12:31:19.642 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 23: else
+2026-01-06 12:31:19.646 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: markPassed(✅ Edades válidas: Niños $edadesNinos, Infantes $edadesInfantes)
+2026-01-06 12:31:19.659 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ ✅ Edades válidas: Niños [10], Infantes []
+2026-01-06 12:31:19.661 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 24: utils.configuration_rooms.configurarHabitacionesYPasajerosV2(habitaciones, adultos, ninos, infantes, edadesNinos, edadesInfantes)
+2026-01-06 12:31:28.416 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edades niños por habitación: [10]
+2026-01-06 12:31:28.419 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 👶 Edades infantes por habitación: []
+2026-01-06 12:31:28.420 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.configuration_rooms.configurarHabitacionesYPasajerosV2 is PASSED
+2026-01-06 12:31:28.424 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 25: edadesCapturadasNinos = []
+2026-01-06 12:31:28.426 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 26: edadesCapturadasInfantes = []
+2026-01-06 12:31:28.427 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 27: if (ninos.sum() > 0)
+2026-01-06 12:31:28.428 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: for ([i = 1, i <= ninos[0], (i++)])
+2026-01-06 12:31:28.431 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: objNino = new com.kms.katalon.core.testobject.TestObject(edad_nino_$i)
+2026-01-06 12:31:28.433 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: objNino.addProperty("xpath", EQUALS, //*[@id='select2-room-selector-1-children-age-1-$i-container'])
+2026-01-06 12:31:28.436 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: waitForElementVisible(objNino, 5)
+2026-01-06 12:31:28.960 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 4: edadTexto = getText(objNino).replaceAll("\D", "")
+2026-01-06 12:31:29.275 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 5: edad = (edadTexto?.isInteger()) ? edadTexto.toInteger() : -1
+2026-01-06 12:31:29.286 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 6: if (edad in (2..17))
+2026-01-06 12:31:29.288 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: edadesCapturadasNinos.add(edad)
+2026-01-06 12:31:29.291 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: comment(🧒 Edad Niño $i capturada: $edad)
+2026-01-06 12:31:29.297 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edad Niño 1 capturada: 10
+2026-01-06 12:31:29.302 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 28: if (infantes.sum() > 0)
+2026-01-06 12:31:29.309 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 29: click(findTestObject("Euromundo/book_steps/button_search_inter"))
+2026-01-06 12:31:29.736 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 30: tituloObj = new com.kms.katalon.core.testobject.TestObject(tituloDinamico)
+2026-01-06 12:31:29.738 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 31: tituloObj.addProperty("xpath", EQUALS, "(//div[contains(@class,'info-card__title')])[1]")
+2026-01-06 12:31:29.743 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 32: waitForElementVisible(tituloObj, 20)
+2026-01-06 12:31:50.064 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'tituloDinamico' located by 'By.xpath: (//div[contains(@class,'info-card__title')])[1]' not found
+2026-01-06 12:31:50.068 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 33: tituloGuardado = getText(tituloObj)
+2026-01-06 12:31:54.261 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 34: mejorPrecioObj = TestObject().addProperty("xpath", EQUALS, "//span[contains(@class,'bestprice__amount')]")
+2026-01-06 12:31:54.263 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 35: mejorPrecio = utils.ValidacionPrecios.validarMejorPrecioEnResultados(mejorPrecioObj)
+2026-01-06 12:31:55.540 INFO  com.kms.katalon.core.util.KeywordUtil    - 💾 Mejor precio capturado del texto visible: 8046.0
+2026-01-06 12:31:55.543 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Validación de mejor precio exitosa. Precio final: 8046.0
+2026-01-06 12:31:55.543 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionPrecios.validarMejorPrecioEnResultados is PASSED
+2026-01-06 12:31:55.545 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 36: waitForElementClickable(findTestObject("Euromundo/book_steps/button_prebook_gd_nal"), 15)
+2026-01-06 12:31:55.891 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 37: click(findTestObject("Euromundo/book_steps/button_prebook_gd_nal"))
+2026-01-06 12:32:01.612 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 38: waitForElementClickable(findTestObject("Euromundo/book_steps/button_finalization_prebook"), 10)
+2026-01-06 12:32:02.444 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 39: policyFees = new com.kms.katalon.core.testobject.TestObject(policyFees)
+2026-01-06 12:32:02.449 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 40: policyFees.addProperty("xpath", EQUALS, "//div[contains(@class,'col-sm-12') and contains(normalize-space(.),'Reserva sujeta a gastos de cancelación')]")
+2026-01-06 12:32:02.458 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 41: if (waitForElementPresent(policyFees, 5, OPTIONAL))
+2026-01-06 12:32:07.576 WARN  k.k.c.w.k.b.WaitForElementPresentKeyword - Object 'policyFees' is not present after 5 second(s)
+2026-01-06 12:32:07.583 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 42: else
+2026-01-06 12:32:07.598 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ No se detectó política restrictiva, el flujo continúa.")
+2026-01-06 12:32:07.604 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ No se detectó política restrictiva, el flujo continúa.
+2026-01-06 12:32:07.612 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 43: edadesValidas = edadesCapturadasNinos.every({ -> ... }) && edadesCapturadasInfantes.every({ -> ... })
+2026-01-06 12:32:07.631 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 44: if (!(edadesValidas))
+2026-01-06 12:32:07.649 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 45: else
+2026-01-06 12:32:07.656 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: utils.PassengerFormHelper.fillPassengerData(edadesCapturadasNinos, edadesCapturadasInfantes)
+2026-01-06 12:32:08.686 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Tratamiento MR asignado por JavaScript para pax 1
+2026-01-06 12:32:08.699 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧾 Rellenando datos para pax 1 ➜ Tratamiento: MR, Edad: 30
+2026-01-06 12:32:11.346 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se encontró campo de correo para pax 1, se continúa sin error.
+2026-01-06 12:32:11.353 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Pax 1: Laura Gomez, 30 años, nacido el 16/06/1995
+2026-01-06 12:32:11.882 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Tratamiento MISS asignado por JavaScript para pax 2
+2026-01-06 12:32:11.884 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧾 Rellenando datos para pax 2 ➜ Tratamiento: MISS, Edad: 10
+2026-01-06 12:32:14.345 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se encontró campo de correo para pax 2, se continúa sin error.
+2026-01-06 12:32:14.352 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Pax 2: Andrea Rodriguez, 10 años, nacido el 19/08/2015
+2026-01-06 12:32:14.355 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.PassengerFormHelper.fillPassengerData is PASSED
+2026-01-06 12:32:14.359 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 46: otroTituloObj = new com.kms.katalon.core.testobject.TestObject(otroTitulo)
+2026-01-06 12:32:14.367 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 47: otroTituloObj.addProperty("xpath", EQUALS, "//*[@id="main-content"]/div[2]/div/div[3]/div[1]/div/div/div/div[1]/div[2]/div[1]")
+2026-01-06 12:32:14.370 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 48: tituloNuevo = getText(otroTituloObj)
+2026-01-06 12:32:14.715 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 49: if (tituloGuardado.equals(tituloNuevo))
+2026-01-06 12:32:14.725 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: println("✅ Los títulos son iguales")
+✅ Los títulos son iguales
+2026-01-06 12:32:14.748 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 51: warningPrecioObj = new com.kms.katalon.core.testobject.TestObject(warningPrecio)
+2026-01-06 12:32:14.761 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 52: warningPrecioObj.addProperty("xpath", EQUALS, "//div[@class='booking-warning__content']")
+2026-01-06 12:32:14.769 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 53: if (verifyElementPresent(warningPrecioObj, 5, OPTIONAL))
+2026-01-06 12:32:19.941 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'warningPrecio' located by 'By.xpath: //div[@class='booking-warning__content']' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'warningPrecio' located by 'By.xpath: //div[@class='booking-warning__content']' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at paquete_nal_para_1adl_1cnn_canal_mxn.run(paquete_nal_para_1adl_1cnn_canal_mxn:204)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:32:19.948 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 54: else
+2026-01-06 12:32:19.951 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ No apareció ningún warning de cambio de precio")
+2026-01-06 12:32:19.951 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ No apareció ningún warning de cambio de precio
+2026-01-06 12:32:19.951 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 55: precioObj = new com.kms.katalon.core.testobject.TestObject(precio)
+2026-01-06 12:32:19.961 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 56: precioObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item booking-breakdown__item--total booking-breakdown__item--is-pay-web']//span[@class='booking-breakdown__item-price']")
+2026-01-06 12:32:19.963 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 57: comisionObj = new com.kms.katalon.core.testobject.TestObject(comision)
+2026-01-06 12:32:19.963 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 58: comisionObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item']//span[contains(text(),'Comisiones')]/following-sibling::span")
+2026-01-06 12:32:19.971 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 59: precioFinalObj = new com.kms.katalon.core.testobject.TestObject(precioFinal)
+2026-01-06 12:32:19.976 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 60: precioFinalObj.addProperty("xpath", EQUALS, "//div[@class='booking-breakdown__item']//span[contains(text(),'Precio final')]/following-sibling::span")
+2026-01-06 12:32:19.982 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 61: totalAdeudadoObj = new com.kms.katalon.core.testobject.TestObject(totalAdeudado)
+2026-01-06 12:32:19.986 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 62: totalAdeudadoObj.addProperty("xpath", EQUALS, "//span[@class='agent-markup__total-due-price']")
+2026-01-06 12:32:19.988 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 63: utils.ValidacionesPrebook.validarPrecioPrebook(precioObj, comisionObj, precioFinalObj, totalAdeudadoObj, mejorPrecio)
+2026-01-06 12:32:20.760 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio: $ 8,046.00 MXN
+2026-01-06 12:32:20.774 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 8,046.00 MXN' | cleaned='8,046.00' | normalized='8046.00'
+2026-01-06 12:32:21.554 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Comisión: $ 0.00 MXN
+2026-01-06 12:32:21.554 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 0.00 MXN' | cleaned='0.00' | normalized='0.00'
+2026-01-06 12:32:22.264 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Final: $ 8,046.00 MXN
+2026-01-06 12:32:22.265 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 8,046.00 MXN' | cleaned='8,046.00' | normalized='8046.00'
+2026-01-06 12:32:22.939 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Total Adeudado: $ 8,046.00 MXN
+2026-01-06 12:32:22.943 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 parseMoney → raw='$ 8,046.00 MXN' | cleaned='8,046.00' | normalized='8046.00'
+2026-01-06 12:32:22.952 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📌 Precio: 8046.0 | Comisión: 0.0 | Precio Final: 8046.0 | Total Adeudado: 8046.0 | Mejor Precio: 8046.0
+2026-01-06 12:32:22.968 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio Final (8046.0) ≈ Precio (8046.0) - Comisión (0.0)
+2026-01-06 12:32:22.970 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (8046.0) ≈ Total Adeudado (8046.0)
+2026-01-06 12:32:22.972 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Mejor Precio (8046.0) ≈ Total Adeudado (8046.0)
+2026-01-06 12:32:22.979 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Todas las validaciones de precios OK
+2026-01-06 12:32:22.981 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionesPrebook.validarPrecioPrebook is PASSED
+2026-01-06 12:32:22.983 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 64: click(findTestObject("Euromundo/book_steps/button_finalization_prebook"))
+2026-01-06 12:32:25.117 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 65: paxDropdown = new com.kms.katalon.core.testobject.TestObject(dynamicPaxSelect)
+2026-01-06 12:32:25.119 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 66: paxDropdown.addProperty("xpath", EQUALS, "//select[contains(@class,'js-set-confirm-pax-data')]")
+2026-01-06 12:32:25.121 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 67: dropdownElem = findWebElement(paxDropdown, 10)
+2026-01-06 12:32:36.982 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 68: Select(dropdownElem).selectByIndex(1)
+2026-01-06 12:32:37.797 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 69: setText(findTestObject("Euromundo/checkout_page/passport_booking_holder"), "102635")
+2026-01-06 12:32:43.424 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 70: cityObj = new com.kms.katalon.core.testobject.TestObject(dynamicCity)
+2026-01-06 12:32:43.429 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 71: cityObj.addProperty("xpath", EQUALS, "//input[@name='holder_city']")
+2026-01-06 12:32:43.433 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 72: waitForElementVisible(cityObj, 10)
+2026-01-06 12:32:43.778 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 73: setText(cityObj, "Bogotá")
+2026-01-06 12:32:45.198 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 74: zipObj = new com.kms.katalon.core.testobject.TestObject(dynamicZip)
+2026-01-06 12:32:45.201 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 75: zipObj.addProperty("xpath", EQUALS, "//input[@name='holder_zipcode']")
+2026-01-06 12:32:45.204 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 76: waitForElementVisible(zipObj, 10)
+2026-01-06 12:32:45.619 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 77: setText(zipObj, "110111")
+2026-01-06 12:32:46.769 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 78: addrObj = new com.kms.katalon.core.testobject.TestObject(dynamicAddress)
+2026-01-06 12:32:46.771 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 79: addrObj.addProperty("xpath", EQUALS, "//input[@name='holder_address']")
+2026-01-06 12:32:46.774 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 80: waitForElementVisible(addrObj, 10)
+2026-01-06 12:32:47.157 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 81: setText(addrObj, "Virrey")
+2026-01-06 12:32:48.605 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 82: setText(findTestObject("Euromundo/checkout_page/phone_booking_holder"), "3218111877")
+2026-01-06 12:32:49.789 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 83: setText(findTestObject("Euromundo/checkout_page/agent_email"), "johana.gomez@ejuniper.com")
+2026-01-06 12:32:51.302 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 84: setText(findTestObject("Euromundo/checkout_page/set_name_billing_info"), "Johana Gomez")
+2026-01-06 12:32:52.529 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 85: setText(findTestObject("Euromundo/checkout_page/set_address_billing_info"), "Virrey")
+2026-01-06 12:32:53.714 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 86: setText(findTestObject("Euromundo/checkout_page/set_rfc_billing_info"), "21312344")
+2026-01-06 12:32:54.986 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 87: setText(findTestObject("Euromundo/checkout_page/set_email_billing_info"), "johana.gomez@ejuniper.com")
+2026-01-06 12:32:56.301 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 88: click(findTestObject("Euromundo/checkout_page/checkbox_fare_breakdown"))
+2026-01-06 12:32:57.117 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 89: click(findTestObject("Euromundo/checkout_page/checkbox_importantInfo"))
+2026-01-06 12:32:58.056 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 90: tituloBookObj = new com.kms.katalon.core.testobject.TestObject(tituloBookObj)
+2026-01-06 12:32:58.058 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 91: tituloBookObj.addProperty("xpath", EQUALS, "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[2]/table/tbody/tr[1]/td/div[2]/div[1]/span")
+2026-01-06 12:32:58.061 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 92: tituloBook = getText(tituloBookObj).trim()
+2026-01-06 12:32:58.490 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 93: logInfo(📌 Título Book: $tituloBook)
+2026-01-06 12:32:58.494 INFO  com.kms.katalon.core.util.KeywordUtil    - 📌 Título Book: PRUEBAS TARIFAS ESPECIALES Y4
+2026-01-06 12:32:58.496 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 94: if (tituloNuevo == tituloBook)
+2026-01-06 12:32:58.501 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: logInfo("✅ Los títulos coinciden")
+2026-01-06 12:32:58.503 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Los títulos coinciden
+2026-01-06 12:32:58.506 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 96: precioObj_pas = byXpath("precioObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[1]")
+2026-01-06 12:32:58.512 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-06 12:32:58.515 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-06 12:32:58.518 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-06 12:32:58.521 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 97: comisionObj_pas = byXpath("comisionObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div/div[1]")
+2026-01-06 12:32:58.523 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-06 12:32:58.526 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-06 12:32:58.528 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-06 12:32:58.538 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 98: precioFinalObj_pas = byXpath("precioFinalObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[3]/div/div[2]/div[2]/div/div[3]")
+2026-01-06 12:32:58.544 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-06 12:32:58.546 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-06 12:32:58.547 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-06 12:32:58.550 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 99: precioPaqueteObj_pas = byXpath("precioPaqueteObj_pas", "//*[@id="main-content"]/div[2]/div/div/div[1]/div[1]/div/div[2]/table/tbody/tr[2]/td")
+2026-01-06 12:32:58.551 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: t = new com.kms.katalon.core.testobject.TestObject(name)
+2026-01-06 12:32:58.552 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: t.addProperty("xpath", EQUALS, xpath)
+2026-01-06 12:32:58.554 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 3: return t
+2026-01-06 12:32:58.557 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 100: utils.ValidacionesPrecios.validarPrecio(precioObj_pas, comisionObj_pas, precioFinalObj_pas, precioPaqueteObj_pas, mejorPrecio)
+2026-01-06 12:33:00.207 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio (total): Precio
+$ 8,046.00 MXN
+2026-01-06 12:33:01.590 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Comisión: Comisiones
+$ 0.00 MXN
+2026-01-06 12:33:02.889 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Final: Precio final
+$ 8,046.00 MXN
+2026-01-06 12:33:04.830 INFO  com.kms.katalon.core.util.KeywordUtil    - 🔎 Precio Paquete: Paquete precio
+$ 8,046.00 MXN
+2026-01-06 12:33:04.836 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📊 Precio: 8046.0 | Comisión: 0.0 | PrecioFinal: 8046.0 | PrecioPaquete: 8046.0 | MejorPrecio: 8046.0
+2026-01-06 12:33:04.854 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (8046.0) ≈ Mejor Precio (8046.0)
+2026-01-06 12:33:04.856 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio (8046.0) ≈ Precio Paquete (8046.0)
+2026-01-06 12:33:04.868 INFO  com.kms.katalon.core.util.KeywordUtil    - ✅ Precio Final (8046.0) ≈ Precio (8046.0) - Comisión (0.0) = 8046,00
+2026-01-06 12:33:04.872 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Todas las validaciones de precios OK
+2026-01-06 12:33:04.873 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.ValidacionesPrecios.validarPrecio is PASSED
+2026-01-06 12:33:04.876 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 101: btnDesglose = TestObject(btnDesglose).addProperty("xpath", EQUALS, "//button[contains(.,'Desglose') or contains(.,'Breakdown') or contains(@class,'js-open-breakdown')]")
+2026-01-06 12:33:04.881 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 102: tablaDesgloseTable = TestObject(tablaDesgloseTable).addProperty("xpath", EQUALS, "//table[contains(@class,'confirm-booking__tableBreakdown__table')]")
+2026-01-06 12:33:04.884 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 103: waitForElementPresent(tablaDesgloseTable, 10, OPTIONAL)
+2026-01-06 12:33:05.237 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 104: scrollToElement(tablaDesgloseTable, 3)
+2026-01-06 12:33:05.577 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 105: waitForElementVisible(tablaDesgloseTable, 10, OPTIONAL)
+2026-01-06 12:33:05.930 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 106: try
+2026-01-06 12:33:05.934 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: valTabla = new utils.ValidacionesPreciosTabla()
+2026-01-06 12:33:05.954 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 2: if (verifyElementPresent(tablaDesgloseTable, 2, OPTIONAL))
+2026-01-06 12:33:06.252 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: valTabla.validacionDesglose(mejorPrecio)
+2026-01-06 12:33:16.274 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'Total Reserva Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[2]' not found
+2026-01-06 12:33:16.280 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'Total Reserva Comisionable'
+2026-01-06 12:33:26.517 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'IVA Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[3]' not found
+2026-01-06 12:33:26.521 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'IVA Comisionable'
+2026-01-06 12:33:36.557 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'Tarifa Comisionable' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[4]' not found
+2026-01-06 12:33:36.564 INFO  com.kms.katalon.core.util.KeywordUtil    - ⚠️ No se encontró 'Tarifa Comisionable'
+2026-01-06 12:33:47.221 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to get text of object '' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object ''
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at utils.ValidacionesPreciosTabla.validacionDesglose(validacion_tabla_desglose.groovy:33)
+	at paquete_nal_para_1adl_1cnn_canal_mxn.run(paquete_nal_para_1adl_1cnn_canal_mxn:390)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: '' located by 'By.xpath: (//tr[@class='js-dropdown-commissionable']/td)[5]' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at utils.ValidacionesPreciosTabla.validacionDesglose(validacion_tabla_desglose.groovy:33)
+	at Script1750110701689.run(Script1750110701689.groovy:390)
+	... 15 more
+)
+2026-01-06 12:33:47.228 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 107: catch (Throwable t)
+2026-01-06 12:33:47.231 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 1: comment(ℹ️ Saltando validación de tabla: clase/método no disponible: $t.message)
+2026-01-06 12:33:47.257 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ℹ️ Saltando validación de tabla: clase/método no disponible: Unable to get text of object ''
+2026-01-06 12:33:47.261 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 109: click(findTestObject("Euromundo/checkout_page/checkbox_TyC_checkout"))
+2026-01-06 12:33:47.975 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 110: click(findTestObject("Euromundo/book_steps/button_finalization_book"))
+2026-01-06 12:34:02.215 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 111: click(findTestObject("Euromundo/book_steps/button_cancel_prebook"))
+2026-01-06 12:34:07.580 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 112: click(findTestObject("Euromundo/book_steps/button_cancel_prebook_hotel"))
+2026-01-06 12:34:10.435 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 113: click(findTestObject("Euromundo/book_steps/button_cancel_book"))
+2026-01-06 12:34:12.613 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 114: waitForAlert(10)
+2026-01-06 12:34:12.694 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 115: acceptAlert()
+2026-01-06 12:34:12.740 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 116: alertCancel = new com.kms.katalon.core.testobject.TestObject(dynamic/alertCancel)
+2026-01-06 12:34:12.744 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 117: alertCancel.addProperty("xpath", EQUALS, "//p[contains(@class,'booking-details__status-text') and contains(text(),'Su reserva ha sido cancelada.')]")
+2026-01-06 12:34:12.750 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 118: waitForElementVisible(alertCancel, 10)
+2026-01-06 12:34:22.705 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 119: scrollToElement(findTestObject("Euromundo/book_steps/bookings"), 10)
+2026-01-06 12:34:23.068 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 120: actualText = getText(alertCancel)
+2026-01-06 12:34:23.464 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 121: verifyMatch(actualText.trim(), "Su reserva ha sido cancelada.", false)
+2026-01-06 12:34:23.486 DEBUG t.paquete_nal_para_1adl_1cnn_canal_mxn   - 122: comment("✅ El texto de cancelación se encontró correctamente.")
+2026-01-06 12:34:23.491 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ El texto de cancelación se encontró correctamente.
+2026-01-06 12:34:24.586 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:34:25.210 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📸 Captura final guardada en: C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Fin_Test_Cases_Euromundo_Paquete_Basico_paquete_nal_para_1adl_1cnn_canal_mxn.png
+2026-01-06 12:34:25.227 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <img src='C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Fin_Test_Cases_Euromundo_Paquete_Basico_paquete_nal_para_1adl_1cnn_canal_mxn.png' width='800'/>
+2026-01-06 12:34:25.898 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 💾 Localizador capturado correctamente: XJW1F2
+2026-01-06 12:34:26.814 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:34:27.963 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ℹ️ Localizador obtenido desde pantalla: XJW1F2
+2026-01-06 12:34:28.109 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⏱️ Duración suite calculada internamente: 00:05:33
+2026-01-06 12:34:28.229 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Euromundo/Paquete_Basico/paquete_nal_para_1adl_1cnn_canal_mxn
+2026-01-06 12:34:28.241 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:34:28.241 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Euromundo/Paquete_Basico/paquete_inter_auv_1adl_1cnn
+2026-01-06 12:34:29.770 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:34:29.771 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:34:29.778 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🌐 TestCase: test cases/euromundo/paquete_basico/paquete_inter_auv_1adl_1cnn
+2026-01-06 12:34:29.786 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🔗 Dominio detectado: https://euromundoauv.juniper.es
+2026-01-06 12:34:29.794 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL: 6.26.105.1
+2026-01-06 12:34:30.481 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: callTestCase(findTestCase("Euromundo/Login/Login_auv"), [:], STOP_ON_FAILURE)
+2026-01-06 12:34:30.554 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:34:30.555 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Euromundo/Login/Login_auv
+2026-01-06 12:34:30.842 DEBUG testcase.Login_auv                       - 1: url = "https://euromundoauv.juniper.es"
+2026-01-06 12:34:30.847 DEBUG testcase.Login_auv                       - 2: openBrowser("https://euromundoauv.juniper.es")
+2026-01-06 12:34:30.852 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-01-06 12:34:31.482 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-06 12:34:31.487 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+ene. 06, 2026 12:34:33 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 143
+ene. 06, 2026 12:34:33 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-06 12:34:34.109 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = cac4c63dc130b9c770597a64518e01fa
+2026-01-06 12:34:34.111 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-06 12:34:34.112 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-06 12:34:34.114 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2026-01-06 12:34:34.115 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-06 12:34:46.954 DEBUG testcase.Login_auv                       - 3: maximizeWindow()
+2026-01-06 12:34:47.084 DEBUG testcase.Login_auv                       - 4: version = utils.DLLUtils.getVersionDLL(url)
+2026-01-06 12:34:48.190 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:34:48.191 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:34:48.192 DEBUG testcase.Login_auv                       - 5: comment(📦 Versión de DLL detectada: $version)
+2026-01-06 12:34:48.197 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada: 6.26.105.1
+2026-01-06 12:34:48.201 DEBUG testcase.Login_auv                       - 6: setText(findTestObject("Euromundo/login/input_User"), username)
+2026-01-06 12:34:49.468 DEBUG testcase.Login_auv                       - 7: setText(findTestObject("Euromundo/login/input_Pss"), password)
+2026-01-06 12:34:50.588 DEBUG testcase.Login_auv                       - 8: click(findTestObject("Euromundo/login/checkbox_TyC"))
+2026-01-06 12:34:51.212 DEBUG testcase.Login_auv                       - 9: click(findTestObject("Euromundo/login/button_Login"))
+2026-01-06 12:34:51.903 DEBUG testcase.Login_auv                       - 10: waitForElementClickable(findTestObject("Euromundo/gran_deal/repository_GD_nal/button_Search_GD"), 10)
+2026-01-06 12:35:05.811 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Web element with id: 'Object Repository/Euromundo/gran_deal/repository_GD_nal/button_Search_GD' located by 'By.xpath: //*[@id="packagespot-searcher"]/div[2]/div/div[1]/div[5]/button' not found
+2026-01-06 12:35:05.815 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Euromundo/Login/Login_auv
+2026-01-06 12:35:05.816 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:35:05.819 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"))
+2026-01-06 12:35:10.448 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:35:10.450 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 3: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/book_steps/button_close_cookies"))
+2026-01-06 12:35:21.491 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:35:21.495 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 4: waitForElementClickable(findTestObject("Euromundo/book_steps/input_destination_inter"), 15)
+2026-01-06 12:35:36.555 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:35:36.560 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 5: selectOptionByValue(findTestObject("Euromundo/book_steps/input_destination_inter"), "35751", true)
+2026-01-06 12:35:46.633 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:35:47.795 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 6: selectOptionByValue(findTestObject("Euromundo/book_steps/select_origin_inter"), "35908", true)
+2026-01-06 12:35:57.903 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:35:58.908 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 7: utils.FechaUtils.setFechaSabadoEnDosMeses("Euromundo/book_steps/origin_date_inter")
+2026-01-06 12:36:01.496 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📅 Sábado aleatorio en 2 meses seteado: 28/03/2026
+2026-01-06 12:36:01.498 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.FechaUtils.setFechaSabadoEnDosMeses is PASSED
+2026-01-06 12:36:01.499 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 8: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/widget/set_rooms_pax_inter"))
+2026-01-06 12:36:03.889 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:36:03.891 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 9: habitaciones = 1
+2026-01-06 12:36:03.892 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 10: adultos = [1]
+2026-01-06 12:36:03.894 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 11: ninos = [1]
+2026-01-06 12:36:03.897 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 12: infantes = [0]
+2026-01-06 12:36:03.900 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 13: edadesNinos =  }).collect({ -> ... })
+2026-01-06 12:36:03.911 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 14: edadesInfantes =  }).collect({ -> ... })
+2026-01-06 12:36:03.918 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 15: edadesNinosValidas = edadesNinos.every({ -> ... })
+2026-01-06 12:36:03.921 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 16: edadesInfantesValidas = edadesInfantes.every({ -> ... })
+2026-01-06 12:36:03.930 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 17: if (!(edadesNinosValidas) || !(edadesInfantesValidas))
+2026-01-06 12:36:03.931 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 18: else
+2026-01-06 12:36:03.933 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: markPassed(✅ Edades válidas: Niños $edadesNinos, Infantes $edadesInfantes)
+2026-01-06 12:36:03.936 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ ✅ Edades válidas: Niños [10], Infantes []
+2026-01-06 12:36:03.938 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 19: utils.configuration_rooms.configurarHabitacionesYPasajerosV2(habitaciones, adultos, ninos, infantes, edadesNinos, edadesInfantes)
+2026-01-06 12:36:15.686 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edades niños por habitación: [10]
+2026-01-06 12:36:15.690 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 👶 Edades infantes por habitación: []
+2026-01-06 12:36:15.691 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.configuration_rooms.configurarHabitacionesYPasajerosV2 is PASSED
+2026-01-06 12:36:15.693 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 20: edadesCapturadasNinos = []
+2026-01-06 12:36:15.696 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 21: edadesCapturadasInfantes = []
+2026-01-06 12:36:15.699 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 22: if (ninos.sum() > 0)
+2026-01-06 12:36:15.703 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: for ([i = 1, i <= ninos[0], (i++)])
+2026-01-06 12:36:15.706 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: objNino = new com.kms.katalon.core.testobject.TestObject(edad_nino_$i)
+2026-01-06 12:36:15.709 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: objNino.addProperty("xpath", EQUALS, //*[@id='select2-room-selector-1-children-age-1-$i-container'])
+2026-01-06 12:36:15.713 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 3: waitForElementVisible(objNino, 5)
+2026-01-06 12:36:16.171 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 4: edadTexto = getText(objNino).replaceAll("\D", "")
+2026-01-06 12:36:16.550 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 5: edad = (edadTexto?.isInteger()) ? edadTexto.toInteger() : -1
+2026-01-06 12:36:16.552 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 6: if (edad in (2..17))
+2026-01-06 12:36:16.553 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: edadesCapturadasNinos.add(edad)
+2026-01-06 12:36:16.555 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: comment(🧒 Edad Niño $i capturada: $edad)
+2026-01-06 12:36:16.559 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edad Niño 1 capturada: 10
+2026-01-06 12:36:16.563 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 23: if (infantes.sum() > 0)
+2026-01-06 12:36:16.567 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 24: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/book_steps/button_search_inter"))
+2026-01-06 12:36:18.909 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:36:18.912 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 25: tituloObj = new com.kms.katalon.core.testobject.TestObject(tituloDinamico)
+2026-01-06 12:36:18.915 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 26: tituloObj.addProperty("xpath", EQUALS, "//div[@class='info-card__title']")
+2026-01-06 12:36:18.920 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 27: tituloGuardado = getText(tituloObj)
+2026-01-06 12:36:29.779 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to get text of object 'tituloDinamico' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_auv_1adl_1cnn.run(paquete_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at Script1749664002301.run(Script1749664002301.groovy:133)
+	... 15 more
+)
+2026-01-06 12:36:29.786 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Euromundo/Paquete_Basico/paquete_inter_auv_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_auv_1adl_1cnn.run(paquete_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more
+
+2026-01-06 12:36:30.588 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:36:30.871 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ❌ Error detectado: se capturó imagen en C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquete_inter_auv_1adl_1cnn.png
+2026-01-06 12:36:30.876 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <p style='color:red;font-weight:bold;'>❌ Captura de error del test: Test_Cases_Euromundo_Paquete_Basico_paquete_inter_auv_1adl_1cnn</p>
+2026-01-06 12:36:30.883 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <img src='C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquete_inter_auv_1adl_1cnn.png' width='800'/>
+2026-01-06 12:36:34.510 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:36:37.702 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:36:37.716 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se detectó localizador en el escenario actual.
+2026-01-06 12:36:43.528 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:36:51.967 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'locator' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador')]' not found
+2026-01-06 12:36:52.005 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⏱️ Duración suite calculada internamente: 00:07:57
+2026-01-06 12:36:52.051 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Euromundo/Paquete_Basico/paquete_inter_auv_1adl_1cnn
+2026-01-06 12:36:52.076 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:36:52.076 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Euromundo/Paquete_Basico/paquete_inter_walm_1adl_1cnn
+2026-01-06 12:36:53.607 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:36:53.608 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:36:53.618 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🌐 TestCase: test cases/euromundo/paquete_basico/paquete_inter_walm_1adl_1cnn
+2026-01-06 12:36:53.622 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🔗 Dominio detectado: https://euromundowalm.juniper.es
+2026-01-06 12:36:53.625 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL: 6.26.105.1
+2026-01-06 12:36:54.169 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 1: callTestCase(findTestCase("Euromundo/Login/Login_walm"), [:], STOP_ON_FAILURE)
+2026-01-06 12:36:54.250 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:36:54.251 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Euromundo/Login/Login_walm
+2026-01-06 12:36:54.287 INFO  c.k.katalon.core.main.TestCaseExecutor   - (Default) variable = 
+2026-01-06 12:36:54.510 DEBUG testcase.Login_walm                      - 1: url = "https://euromundowalm.juniper.es"
+2026-01-06 12:36:54.514 DEBUG testcase.Login_walm                      - 2: openBrowser("https://euromundowalm.juniper.es")
+2026-01-06 12:36:54.520 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-01-06 12:36:55.201 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-06 12:36:55.205 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+ene. 06, 2026 12:36:57 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 143
+ene. 06, 2026 12:36:57 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-06 12:36:57.675 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 8e16355b2418408f95ab2fab02f0e1a3
+2026-01-06 12:36:57.676 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-06 12:36:57.677 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-06 12:36:57.678 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2026-01-06 12:36:57.679 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-06 12:37:10.690 DEBUG testcase.Login_walm                      - 3: maximizeWindow()
+2026-01-06 12:37:10.812 DEBUG testcase.Login_walm                      - 4: version = utils.DLLUtils.getVersionDLL(url)
+2026-01-06 12:37:11.907 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:37:11.908 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:37:11.910 DEBUG testcase.Login_walm                      - 5: comment(📦 Versión de DLL detectada: $version)
+2026-01-06 12:37:11.915 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada: 6.26.105.1
+2026-01-06 12:37:11.918 DEBUG testcase.Login_walm                      - 6: setText(findTestObject("Euromundo/login/input_User"), username)
+2026-01-06 12:37:13.099 DEBUG testcase.Login_walm                      - 7: setText(findTestObject("Euromundo/login/input_Pss"), password)
+2026-01-06 12:37:14.175 DEBUG testcase.Login_walm                      - 8: click(findTestObject("Euromundo/login/checkbox_TyC"))
+2026-01-06 12:37:14.904 DEBUG testcase.Login_walm                      - 9: click(findTestObject("Euromundo/login/button_Login"))
+2026-01-06 12:37:15.619 DEBUG testcase.Login_walm                      - 10: waitForElementClickable(findTestObject("Euromundo/book_steps/button_search_inter"), 10)
+2026-01-06 12:37:25.772 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Web element with id: 'Object Repository/Euromundo/book_steps/button_search_inter' located by 'By.xpath: //*[@id="package-searcher"]/div[2]/div/div[1]/div[5]/button' not found
+2026-01-06 12:37:25.776 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Euromundo/Login/Login_walm
+2026-01-06 12:37:25.776 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:37:25.781 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 2: waitForElementClickable(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"), 10)
+2026-01-06 12:37:26.309 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 3: mouseOver(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"))
+2026-01-06 12:37:26.892 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 4: click(findTestObject("Euromundo/paquete_basico/repository_paquete_inter/select_paquete_inter"))
+2026-01-06 12:37:32.742 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 5: click(findTestObject("Euromundo/book_steps/button_close_cookies"))
+2026-01-06 12:37:37.392 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 6: waitForElementClickable(findTestObject("Euromundo/book_steps/input_destination_inter"), 15)
+2026-01-06 12:37:52.452 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:37:52.459 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 7: selectOptionByValue(findTestObject("Euromundo/book_steps/input_destination_inter"), "29476", true)
+2026-01-06 12:38:02.522 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:38:03.646 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 8: selectOptionByValue(findTestObject("Euromundo/book_steps/select_origin_inter"), "35163", true)
+2026-01-06 12:38:13.698 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:38:14.825 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 9: utils.FechaUtils.seleccionarPrimerDiaDisponibleCalendario("Euromundo/book_steps/origin_date_inter")
+2026-01-06 12:38:15.418 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📅 Detectado input: intentando abrir calendario y seleccionar primer día disponible...
+2026-01-06 12:38:17.695 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ✅ Primer día habilitado del calendario seleccionado correctamente.
+2026-01-06 12:38:17.696 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.FechaUtils.seleccionarPrimerDiaDisponibleCalendario is PASSED
+2026-01-06 12:38:17.697 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 10: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/widget/set_rooms_pax_inter"))
+2026-01-06 12:38:20.625 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:38:20.627 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 11: habitaciones = 1
+2026-01-06 12:38:20.630 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 12: adultos = [1]
+2026-01-06 12:38:20.632 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 13: ninos = [1]
+2026-01-06 12:38:20.634 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 14: infantes = [0]
+2026-01-06 12:38:20.634 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 15: edadesNinos =  }).collect({ -> ... })
+2026-01-06 12:38:20.642 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 16: edadesInfantes =  }).collect({ -> ... })
+2026-01-06 12:38:20.650 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 17: edadesNinosValidas = edadesNinos.every({ -> ... })
+2026-01-06 12:38:20.656 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 18: edadesInfantesValidas = edadesInfantes.every({ -> ... })
+2026-01-06 12:38:20.662 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 19: if (!(edadesNinosValidas) || !(edadesInfantesValidas))
+2026-01-06 12:38:20.666 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 20: else
+2026-01-06 12:38:20.667 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 1: markPassed(✅ Edades válidas: Niños $edadesNinos, Infantes $edadesInfantes)
+2026-01-06 12:38:20.669 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ ✅ Edades válidas: Niños [10], Infantes []
+2026-01-06 12:38:20.671 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 21: utils.configuration_rooms.configurarHabitacionesYPasajerosV2(habitaciones, adultos, ninos, infantes, edadesNinos, edadesInfantes)
+2026-01-06 12:38:32.123 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edades niños por habitación: [10]
+2026-01-06 12:38:32.125 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 👶 Edades infantes por habitación: []
+2026-01-06 12:38:32.126 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.configuration_rooms.configurarHabitacionesYPasajerosV2 is PASSED
+2026-01-06 12:38:32.127 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 22: edadesCapturadasNinos = []
+2026-01-06 12:38:32.130 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 23: edadesCapturadasInfantes = []
+2026-01-06 12:38:32.134 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 24: if (ninos.sum() > 0)
+2026-01-06 12:38:32.137 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 1: for ([i = 1, i <= ninos[0], (i++)])
+2026-01-06 12:38:32.139 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 1: objNino = new com.kms.katalon.core.testobject.TestObject(edad_nino_$i)
+2026-01-06 12:38:32.141 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 2: objNino.addProperty("xpath", EQUALS, //*[@id='select2-room-selector-1-children-age-1-$i-container'])
+2026-01-06 12:38:32.143 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 3: waitForElementVisible(objNino, 5)
+2026-01-06 12:38:32.747 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 4: edadTexto = getText(objNino).replaceAll("\D", "")
+2026-01-06 12:38:33.131 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 5: edad = (edadTexto?.isInteger()) ? edadTexto.toInteger() : -1
+2026-01-06 12:38:33.132 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 6: if (edad in (2..17))
+2026-01-06 12:38:33.133 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 1: edadesCapturadasNinos.add(edad)
+2026-01-06 12:38:33.133 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 2: comment(🧒 Edad Niño $i capturada: $edad)
+2026-01-06 12:38:33.137 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edad Niño 1 capturada: 10
+2026-01-06 12:38:33.139 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 25: if (infantes.sum() > 0)
+2026-01-06 12:38:33.140 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 26: click(findTestObject("Euromundo/book_steps/button_search_inter"))
+2026-01-06 12:38:34.060 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 27: tituloObj = new com.kms.katalon.core.testobject.TestObject(tituloDinamico)
+2026-01-06 12:38:34.063 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 28: tituloObj.addProperty("xpath", EQUALS, "//*[@id="results-list"]/div[2]/div/div[1]/article/div[1]/div[2]/div[1]")
+2026-01-06 12:38:34.065 DEBUG testcase.paquete_inter_walm_1adl_1cnn    - 29: tituloGuardado = getText(tituloObj)
+2026-01-06 12:38:44.859 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to get text of object 'tituloDinamico' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_walm_1adl_1cnn.run(paquete_inter_walm_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //*[@id="results-list"]/div[2]/div/div[1]/article/div[1]/div[2]/div[1]' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at Script1750110716902.run(Script1750110716902.groovy:133)
+	... 15 more
+)
+2026-01-06 12:38:44.865 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Euromundo/Paquete_Basico/paquete_inter_walm_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquete_inter_walm_1adl_1cnn.run(paquete_inter_walm_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //*[@id="results-list"]/div[2]/div/div[1]/article/div[1]/div[2]/div[1]' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more
+
+2026-01-06 12:38:45.718 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:38:46.053 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ❌ Error detectado: se capturó imagen en C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquete_inter_walm_1adl_1cnn.png
+2026-01-06 12:38:46.056 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <p style='color:red;font-weight:bold;'>❌ Captura de error del test: Test_Cases_Euromundo_Paquete_Basico_paquete_inter_walm_1adl_1cnn</p>
+2026-01-06 12:38:46.059 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <img src='C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquete_inter_walm_1adl_1cnn.png' width='800'/>
+2026-01-06 12:38:49.434 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:38:52.550 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:38:52.556 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se detectó localizador en el escenario actual.
+2026-01-06 12:38:53.289 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:38:59.872 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'locator' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador')]' not found
+2026-01-06 12:38:59.899 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⏱️ Duración suite calculada internamente: 00:10:05
+2026-01-06 12:38:59.926 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Euromundo/Paquete_Basico/paquete_inter_walm_1adl_1cnn
+2026-01-06 12:38:59.935 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:38:59.935 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Euromundo/Paquete_Basico/paquetes_inter_auv_1adl_1cnn
+2026-01-06 12:39:01.229 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:39:01.231 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:39:01.233 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🌐 TestCase: test cases/euromundo/paquete_basico/paquetes_inter_auv_1adl_1cnn
+2026-01-06 12:39:01.237 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🔗 Dominio detectado: https://euromundoauv.juniper.es
+2026-01-06 12:39:01.241 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL: 6.26.105.1
+2026-01-06 12:39:01.821 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: callTestCase(findTestCase("Euromundo/Login/Login_auv"), [:], STOP_ON_FAILURE)
+2026-01-06 12:39:01.894 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:39:01.894 INFO  c.k.katalon.core.main.TestCaseExecutor   - CALL Test Cases/Euromundo/Login/Login_auv
+2026-01-06 12:39:01.926 DEBUG testcase.Login_auv                       - 1: url = "https://euromundoauv.juniper.es"
+2026-01-06 12:39:01.930 DEBUG testcase.Login_auv                       - 2: openBrowser("https://euromundoauv.juniper.es")
+2026-01-06 12:39:01.936 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-01-06 12:39:02.596 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-01-06 12:39:02.599 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+ene. 06, 2026 12:39:05 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find CDP implementation matching 143
+ene. 06, 2026 12:39:05 P. M. org.openqa.selenium.chromium.ChromiumDriver lambda$new$4
+ADVERTENCIA: Unable to find version of CDP to use for 143.0.7499.170. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.28.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+2026-01-06 12:39:05.134 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 051121f9983b404fabf6ee88621de71c
+2026-01-06 12:39:05.135 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 143.0.7499.170
+2026-01-06 12:39:05.135 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-01-06 12:39:05.137 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.28.1
+2026-01-06 12:39:05.138 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-01-06 12:39:17.383 DEBUG testcase.Login_auv                       - 3: maximizeWindow()
+2026-01-06 12:39:17.498 DEBUG testcase.Login_auv                       - 4: version = utils.DLLUtils.getVersionDLL(url)
+2026-01-06 12:39:18.570 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada y guardada globalmente: 6.26.105.1
+2026-01-06 12:39:18.572 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.DLLUtils.getVersionDLL is PASSED
+2026-01-06 12:39:18.573 DEBUG testcase.Login_auv                       - 5: comment(📦 Versión de DLL detectada: $version)
+2026-01-06 12:39:18.575 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📦 Versión de DLL detectada: 6.26.105.1
+2026-01-06 12:39:18.577 DEBUG testcase.Login_auv                       - 6: setText(findTestObject("Euromundo/login/input_User"), username)
+2026-01-06 12:39:19.782 DEBUG testcase.Login_auv                       - 7: setText(findTestObject("Euromundo/login/input_Pss"), password)
+2026-01-06 12:39:20.827 DEBUG testcase.Login_auv                       - 8: click(findTestObject("Euromundo/login/checkbox_TyC"))
+2026-01-06 12:39:21.383 DEBUG testcase.Login_auv                       - 9: click(findTestObject("Euromundo/login/button_Login"))
+2026-01-06 12:39:22.001 DEBUG testcase.Login_auv                       - 10: waitForElementClickable(findTestObject("Euromundo/gran_deal/repository_GD_nal/button_Search_GD"), 10)
+2026-01-06 12:39:36.823 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Web element with id: 'Object Repository/Euromundo/gran_deal/repository_GD_nal/button_Search_GD' located by 'By.xpath: //*[@id="packagespot-searcher"]/div[2]/div/div[1]/div[5]/button' not found
+2026-01-06 12:39:36.827 INFO  c.k.katalon.core.main.TestCaseExecutor   - END CALL Test Cases/Euromundo/Login/Login_auv
+2026-01-06 12:39:36.828 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-01-06 12:39:36.833 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/paquete_basico/repository_paquete_nal/menu_paquete_basico"))
+2026-01-06 12:39:46.926 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:39:46.929 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 3: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/book_steps/button_close_cookies"))
+2026-01-06 12:39:52.304 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:39:52.305 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 4: waitForElementClickable(findTestObject("Euromundo/book_steps/input_destination_inter"), 15)
+2026-01-06 12:40:07.366 WARN  k.c.w.k.b.WaitForElementClickableKeyword - Waiting for element timed out
+2026-01-06 12:40:07.373 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 5: selectOptionByValue(findTestObject("Euromundo/book_steps/input_destination_inter"), "35751", true)
+2026-01-06 12:40:17.422 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:40:18.321 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 6: selectOptionByValue(findTestObject("Euromundo/book_steps/select_origin_inter"), "35908", true)
+2026-01-06 12:40:28.379 WARN  c.k.k.c.w.k.b.SelectOptionByValueKeyword - Waiting for element timed out
+2026-01-06 12:40:29.498 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 7: utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo("Euromundo/book_steps/origin_date_inter")
+2026-01-06 12:40:32.306 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 📅 Fecha aleatoria entre 3 y 4 meses: 06/04/2026
+2026-01-06 12:40:32.307 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.FechaUtils.setFechaAleatoriaDesdeTresMesesFuturo is PASSED
+2026-01-06 12:40:32.309 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 8: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/widget/set_rooms_pax_inter"))
+2026-01-06 12:40:34.280 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:40:34.281 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 9: habitaciones = 1
+2026-01-06 12:40:34.283 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 10: adultos = [1]
+2026-01-06 12:40:34.284 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 11: ninos = [1]
+2026-01-06 12:40:34.285 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 12: infantes = [0]
+2026-01-06 12:40:34.286 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 13: edadesNinos =  }).collect({ -> ... })
+2026-01-06 12:40:34.293 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 14: edadesInfantes =  }).collect({ -> ... })
+2026-01-06 12:40:34.301 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 15: edadesNinosValidas = edadesNinos.every({ -> ... })
+2026-01-06 12:40:34.305 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 16: edadesInfantesValidas = edadesInfantes.every({ -> ... })
+2026-01-06 12:40:34.310 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 17: if (!(edadesNinosValidas) || !(edadesInfantesValidas))
+2026-01-06 12:40:34.313 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 18: else
+2026-01-06 12:40:34.314 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: markPassed(✅ Edades válidas: Niños $edadesNinos, Infantes $edadesInfantes)
+2026-01-06 12:40:34.315 DEBUG com.kms.katalon.core.util.KeywordUtil    - ✓ ✅ Edades válidas: Niños [10], Infantes []
+2026-01-06 12:40:34.317 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 19: utils.configuration_rooms.configurarHabitacionesYPasajerosV2(habitaciones, adultos, ninos, infantes, edadesNinos, edadesInfantes)
+2026-01-06 12:40:46.032 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edades niños por habitación: [10]
+2026-01-06 12:40:46.035 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 👶 Edades infantes por habitación: []
+2026-01-06 12:40:46.036 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - utils.configuration_rooms.configurarHabitacionesYPasajerosV2 is PASSED
+2026-01-06 12:40:46.038 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 20: edadesCapturadasNinos = []
+2026-01-06 12:40:46.040 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 21: edadesCapturadasInfantes = []
+2026-01-06 12:40:46.041 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 22: if (ninos.sum() > 0)
+2026-01-06 12:40:46.043 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: for ([i = 1, i <= ninos[0], (i++)])
+2026-01-06 12:40:46.046 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: objNino = new com.kms.katalon.core.testobject.TestObject(edad_nino_$i)
+2026-01-06 12:40:46.049 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: objNino.addProperty("xpath", EQUALS, //*[@id='select2-room-selector-1-children-age-1-$i-container'])
+2026-01-06 12:40:46.053 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 3: waitForElementVisible(objNino, 5)
+2026-01-06 12:40:46.626 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 4: edadTexto = getText(objNino).replaceAll("\D", "")
+2026-01-06 12:40:47.019 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 5: edad = (edadTexto?.isInteger()) ? edadTexto.toInteger() : -1
+2026-01-06 12:40:47.022 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 6: if (edad in (2..17))
+2026-01-06 12:40:47.023 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 1: edadesCapturadasNinos.add(edad)
+2026-01-06 12:40:47.024 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 2: comment(🧒 Edad Niño $i capturada: $edad)
+2026-01-06 12:40:47.029 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - 🧒 Edad Niño 1 capturada: 10
+2026-01-06 12:40:47.032 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 23: if (infantes.sum() > 0)
+2026-01-06 12:40:47.035 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 24: helpers.WebUIHelper.safeClick(findTestObject("Euromundo/book_steps/button_search_inter"))
+2026-01-06 12:40:49.255 INFO  k.k.c.m.CustomKeywordDelegatingMetaClass - helpers.WebUIHelper.safeClick is PASSED
+2026-01-06 12:40:49.257 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 25: tituloObj = new com.kms.katalon.core.testobject.TestObject(tituloDinamico)
+2026-01-06 12:40:49.260 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 26: tituloObj.addProperty("xpath", EQUALS, "//div[@class='info-card__title']")
+2026-01-06 12:40:49.265 DEBUG testcase.paquete_inter_auv_1adl_1cnn     - 27: tituloGuardado = getText(tituloObj)
+2026-01-06 12:41:00.034 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to get text of object 'tituloDinamico' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquetes_inter_auv_1adl_1cnn.run(paquetes_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at Script1749664002301.run(Script1749664002301.groovy:133)
+	... 15 more
+)
+2026-01-06 12:41:00.039 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Euromundo/Paquete_Basico/paquetes_inter_auv_1adl_1cnn FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to get text of object 'tituloDinamico'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:132)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.getText(GetTextKeyword.groovy:90)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword.execute(GetTextKeyword.groovy:67)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.getText(WebUiBuiltInKeywords.groovy:1019)
+	at paquetes_inter_auv_1adl_1cnn.run(paquetes_inter_auv_1adl_1cnn:133)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:486)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:477)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:456)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:322)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+Caused by: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'tituloDinamico' located by 'By.xpath: //div[@class='info-card__title']' not found
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementByNormalMethods(WebUiElementFinder.java:193)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:86)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:74)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElementsBySelectedMethod(WebUiElementFinder.java:69)
+	at com.kms.katalon.core.webui.model.WebUiElementFinder.findElement(WebUiElementFinder.java:43)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.basicFindElement(WebUiElementFinderWithTimeout.java:50)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.lambda$0(WebUiElementFinderWithTimeout.java:29)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.WebUiElementFinderWithTimeout.findElement(WebUiElementFinderWithTimeout.java:28)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.groovy:96)
+	at com.kms.katalon.core.webui.keyword.builtin.GetTextKeyword$_getText_closure1.doCall(GetTextKeyword.groovy:80)
+	at jdk.internal.reflect.GeneratedMethodAccessor42.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at jdk.proxy2/jdk.proxy2.$Proxy51.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more
+
+2026-01-06 12:41:00.741 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:41:01.002 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ❌ Error detectado: se capturó imagen en C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquetes_inter_auv_1adl_1cnn.png
+2026-01-06 12:41:01.004 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <p style='color:red;font-weight:bold;'>❌ Captura de error del test: Test_Cases_Euromundo_Paquete_Basico_paquetes_inter_auv_1adl_1cnn</p>
+2026-01-06 12:41:01.006 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - <img src='C:/TempSourceSafe/Katalon Studio/Katalon Websites/Euromundo/Capturas/Test_Suites_Stabilization_Testing_stabilization_test_2ADL_1CNN_20260106_122854/Error_Test_Cases_Euromundo_Paquete_Basico_paquetes_inter_auv_1adl_1cnn.png' width='800'/>
+2026-01-06 12:41:04.793 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorReserva' located by 'By.xpath: //h4[contains(@class,'booking-details__booking-code')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:41:08.055 WARN  c.k.k.core.keyword.internal.KeywordMain  - com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found (Root cause: com.kms.katalon.core.exception.StepFailedException: com.kms.katalon.core.webui.exception.WebElementNotFoundException: Web element with id: 'localizadorGenerico' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador:')]' not found
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:175)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.doCall(VerifyElementPresentKeyword.groovy:88)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword$_verifyElementPresent_closure1.call(VerifyElementPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.verifyElementPresent(VerifyElementPresentKeyword.groovy:95)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyElementPresentKeyword.execute(VerifyElementPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:79)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyElementPresent(WebUiBuiltInKeywords.groovy:1549)
+	at Listener_LocalizadorReserva.capturarLocalizador(Listener_Localizador.groovy:39)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeMethod(TestHooker.java:111)
+	at com.kms.katalon.core.context.internal.TestHooker.lambda$3(TestHooker.java:95)
+	at com.kms.katalon.core.context.internal.TestHooker.invokeContextMethods(TestHooker.java:94)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.lambda$3(TestListenerCollector.java:88)
+	at com.kms.katalon.core.context.internal.TestListenerCollector.handleListenerEvent(TestListenerCollector.java:85)
+	at com.kms.katalon.core.context.internal.ExecutionEventManager.publicEvent(ExecutionEventManager.java:36)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:352)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:145)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:104)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at TempTestSuite1767720484750.run(TempTestSuite1767720484750.groovy:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+)
+2026-01-06 12:41:08.062 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⚠️ No se detectó localizador en el escenario actual.
+2026-01-06 12:41:13.355 INFO  c.kms.katalon.core.webui.util.FileUtil   - 0 hidden object(s)
+2026-01-06 12:41:21.499 WARN  k.k.c.w.k.b.WaitForElementVisibleKeyword - Web element with id: 'locator' located by 'By.xpath: //*[contains(translate(text(),'LOCALIZADOR','localizador'),'localizador')]' not found
+2026-01-06 12:41:21.525 INFO  c.k.k.c.keyword.builtin.CommentKeyword   - ⏱️ Duración suite calculada internamente: 00:12:26
