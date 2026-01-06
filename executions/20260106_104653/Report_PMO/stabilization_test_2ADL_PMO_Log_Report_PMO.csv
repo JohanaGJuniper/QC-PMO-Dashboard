@@ -1,0 +1,6 @@
+Fecha,Escenario,Localizador,Estado,Comentarios del QC
+"2026-01-06_10-51-31","circuitos_reserva_inter_con_cambio_de_hotel","8SMRB7","PASSED",""
+"2026-01-06_10-56-54","gd_reserva_inter_vuelo_con_aerobus","6GX33W","PASSED",""
+"2026-01-06_10-59-43","hoteles_reserva_nal_cotizacion_canal_mxn","2FTH18","PASSED",""
+"2026-01-06_11-01-59","paquete_nal_cambiando_transfer_canal_mxn","","FAILED",""
+"2026-01-06_11-04-29","paquete_agregando_actividad_canal_auv","","FAILED",""

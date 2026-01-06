@@ -28,5 +28,11 @@
         "suite": "stabilization_test_2ADL_1CNN",
         "release": "6.26.105.1",
         "path": "executions/20260105_194332/Report_PMO/Report_PMO_All.html"
+    },
+    {
+        "date": "2026-01-06 11:04:36",
+        "suite": "stabilization_test_2ADL",
+        "release": "6.26.105.1",
+        "path": "executions/20260106_104653/Report_PMO/Report_PMO_All.html"
     }
 ]
