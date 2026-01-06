@@ -1,3 +1,188 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:321278b7ddc000469a5a561e56dd40d735c51a7454d4a5cb17cad882ec511f1c
-size 4531
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>PMO Dashboard – Euromundo</title>
+
+<style>
+body{
+  font-family:'Segoe UI',Arial;
+  background:#f4f6f9;
+  padding:30px;
+  color:#1a2b49
+}
+h1{margin-bottom:5px}
+p.subtitle{margin-top:0;color:#555}
+
+.card{
+  background:#fff;
+  border-radius:14px;
+  padding:20px;
+  margin-bottom:20px;
+  box-shadow:0 4px 12px rgba(0,0,0,.08)
+}
+
+.card.latest{
+  border-left:6px solid #2ECC71;
+}
+
+.exec-title{
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:6px
+}
+
+.exec-meta{
+  font-size:14px;
+  color:#555;
+  margin-bottom:12px
+}
+
+a.btn{
+  display:inline-block;
+  margin-right:10px;
+  margin-top:6px;
+  padding:10px 16px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px
+}
+.btn.final{
+  background:#2F3A56;
+  color:white
+}
+.btn.all{
+  background:#E0E7FF;
+  color:#1a2b49
+}
+
+hr{
+  border:none;
+  border-top:1px solid #e0e0e0;
+  margin:30px 0
+}
+
+#searchInput{
+  width:100%;
+  max-width:480px;
+  padding:12px 14px;
+  border-radius:10px;
+  border:1px solid #ccc;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div style="margin-bottom:20px">
+  <img src="assets/images/juniper-logo.png"
+       alt="Juniper Logo"
+       style="max-width:180px;margin-bottom:10px">
+</div>
+
+<h1>📊 PMO Dashboard – Euromundo</h1>
+<p class="subtitle">Repositorio automático de ejecuciones Katalon</p>
+
+<!-- 🔍 Buscador -->
+<div style="margin:20px 0">
+  <input
+    id="searchInput"
+    type="text"
+    placeholder="🔍 Buscar por Execution ID, fecha, suite o release"
+  >
+</div>
+
+<div id="latestExecution"></div>
+
+<hr>
+
+<h2>📚 Histórico de ejecuciones</h2>
+<div id="history"></div>
+
+<p style="margin-top:40px;font-size:13px;color:#777">
+Dashboard generado automáticamente por Katalon
+</p>
+
+<script>
+fetch('executions/executions.json')
+  .then(r => r.json())
+  .then(data => {
+    if (!data || !data.length) return;
+
+    // 🔹 Extraer ExecutionId desde el path
+    data.forEach(exec => {
+      exec.executionId = exec.path.split('/')[1];
+    });
+
+    const latest = data[data.length - 1];
+    const history = data.slice().reverse();
+
+    // ===== Última ejecución =====
+    document.getElementById('latestExecution').innerHTML = `
+      <div class="card latest">
+        <div class="exec-title">▶️ Última Ejecución</div>
+        <div class="exec-meta">
+          <b>Execution ID:</b> ${latest.executionId}<br>
+          <b>Fecha:</b> ${latest.date}<br>
+          <b>Suite:</b> ${latest.suite}<br>
+          <b>Release:</b> ${latest.release || 'N/A'}
+        </div>
+        <a class="btn final" href="${latest.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
+          📘 Reporte FINAL
+        </a>
+        <a class="btn all" href="${latest.path}" target="_blank">
+          📂 Reporte ALL
+        </a>
+      </div>
+    `;
+
+    // ===== Render histórico =====
+    function renderHistory(list){
+      const historyDiv = document.getElementById('history');
+      historyDiv.innerHTML = '';
+
+      list.forEach(exec => {
+        historyDiv.innerHTML += `
+          <div class="card">
+            <div class="exec-title">Execution ID: ${exec.executionId}</div>
+            <div class="exec-meta">
+              <b>Fecha:</b> ${exec.date}<br>
+              <b>Suite:</b> ${exec.suite}<br>
+              <b>Release:</b> ${exec.release || 'N/A'}
+            </div>
+            <a class="btn final" href="${exec.path.replace('Report_PMO_All.html','Report_PMO_Final.html')}" target="_blank">
+              📘 Final
+            </a>
+            <a class="btn all" href="${exec.path}" target="_blank">
+              📂 All
+            </a>
+          </div>
+        `;
+      });
+    }
+
+    renderHistory(history);
+
+    // ===== Filtro =====
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', e => {
+      const value = e.target.value.toLowerCase();
+
+      const filtered = history.filter(exec =>
+        exec.executionId.toLowerCase().includes(value) ||
+        exec.date.toLowerCase().includes(value) ||
+        exec.suite.toLowerCase().includes(value) ||
+        (exec.release && exec.release.toLowerCase().includes(value))
+      );
+
+      renderHistory(filtered);
+    });
+
+  })
+  .catch(err => console.error('Error cargando executions.json', err));
+</script>
+
+</body>
+</html>
